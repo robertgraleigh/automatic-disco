@@ -1,0 +1,9 @@
+$footer-bg-color: #222222;
+$footer-text-color: #999999;
+$footer-display-font-family: Helvetica, Arial, sans-serif;
+
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  font-family: $footer-display-font-family;
+}

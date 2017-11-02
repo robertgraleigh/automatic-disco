@@ -65,6 +65,10 @@
     },
     watch: true,
     plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+      }),
       new ExtractTextWebpackPlugin("css/app.build.css"),
       new HtmlWebpackPlugin({
         title: 'Index`',
