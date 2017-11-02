@@ -460,6 +460,106 @@
 .long-delay {
   animation-delay: 700ms !important; }
 
+.client-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1.5rem; }
+
+.client-card-thumbnail {
+  display: block;
+  position: relative; }
+
+.client-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0; }
+
+.client-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem; }
+
+.client-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem; }
+
+.client-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through; }
+
+.client-card-colors {
+  display: block;
+  margin-top: 0.8rem; }
+
+.client-card-color-option {
+  display: inline-block;
+  height: 25px;
+  width: 25px; }
+
+.client-card-button {
+  padding-top: 20px; }
+
+.project-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1.5rem; }
+
+.project-card-thumbnail {
+  display: block;
+  position: relative; }
+
+.project-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0; }
+
+.project-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem; }
+
+.project-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem; }
+
+.project-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through; }
+
+.project-card-colors {
+  display: block;
+  margin-top: 0.8rem; }
+
+.project-card-color-option {
+  display: inline-block;
+  height: 25px;
+  width: 25px; }
+
+.project-card-button {
+  padding-top: 20px; }
+
 .footer {
   background-color: #222222;
   color: #999999;

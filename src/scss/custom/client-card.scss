@@ -1,0 +1,58 @@
+.client-card {
+  background-color: $white;
+  border: 1px solid $light-gray;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.client-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.client-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.client-card-desc {
+  color: $dark-gray;
+  display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+}
+
+.client-card-price {
+  color: darken($dark-gray,30%);
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.client-card-sale {
+  color: $medium-gray;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.client-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.client-card-color-option {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+
+.client-card-button {
+  padding-top: 20px;
+}
