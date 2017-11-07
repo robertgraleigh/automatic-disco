@@ -1,0 +1,16 @@
+// fe-dev-preview.scss
+$fe-dev-margin-top: 20px;
+$fe-dev-margin-bottom: 20px;
+$fe-dev-padding-top: 20px;
+$fe-dev-padding-bottom: 20px;
+$fe-dev-bg-color: #FFFFFF;
+$fe-dev-border-bottom: #CCCCCC;
+
+.fe-dev-preview {
+  margin-top: $fe-dev-margin-top;
+  margin-bottom: $fe-dev-margin-bottom;
+  padding-top: $fe-dev-padding-top;
+  padding-bottom: $fe-dev-padding-bottom;
+  border-bottom: solid 1px $fe-dev-border-bottom;
+  background-color: $fe-dev-bg-color;
+}

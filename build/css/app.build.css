@@ -460,6 +460,43 @@
 .long-delay {
   animation-delay: 700ms !important; }
 
+.hero {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #0075BD;
+  color: #FFFFFF; }
+
+.hero-tagline {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  color: #FFFFFF; }
+
+.about-preview {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #CCCCCC;
+  background-color: #FFFFFF; }
+
+.pm-preview {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #CCCCCC;
+  background-color: #FFFFFF; }
+
+.fe-dev-preview {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #CCCCCC;
+  background-color: #FFFFFF; }
+
 .client-card {
   background-color: #fefefe;
   border: 1px solid #e6e6e6;

@@ -1,0 +1,31 @@
+// hero partial _hero.scss
+$hero-margin-top: 0px;
+$hero-margin-bottom: 0px;
+$hero-padding-top: 10vh;
+$hero-padding-bottom: 10vh;
+$hero-heading-font-family: 'Rubik', sans-serif;
+$hero-heading-font-color: #FFFFFF;
+$hero-display-text: 'Georgia', 'Times New Roman', sans-serif;
+$hero-display-text-color: #CCCCCC;
+$hero-background-color: #0075BD;
+$hero-background-image: url('http://placehold.it/1000x1000');
+
+// hero tagline
+$hero-tagline-padding-top: 20px;
+$hero-tagline-padding-bottom: 0px;
+
+.hero {
+  margin-top: $hero-margin-top;
+  margin-bottom: $hero-margin-bottom;
+  padding-top: $hero-padding-top;
+  padding-bottom: $hero-padding-bottom;
+  background-color: $hero-background-color;
+  //background-image: $hero-background-image;
+  color: $hero-heading-font-color;
+}
+
+.hero-tagline {
+  padding-top: $hero-tagline-padding-top;
+  padding-bottom: $hero-tagline-padding-bottom;
+  color: $hero-heading-font-color;
+}

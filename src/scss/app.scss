@@ -21,14 +21,13 @@
 // import custom app components
 // @import "custom/example-component";
 // @import "custom/primary-nav";
-// @import "custom/hero";
-// @import "custom/about";
-// @import "custom/values";
-// @import "custom/product-bar";
-@import "./custom/client-card.scss";
+@import "custom/hero";
+@import "custom/about-preview";
+@import "custom/pm-preview";
+@import "custom/fe-dev-preview";
+@import "custom/client-card";
 @import "custom/project-card";
 @import "custom/footer";
-// @import "custom/copyright";
 
 @include foundation-global-styles;
 @include foundation-xy-grid-classes;

@@ -1,0 +1,16 @@
+// about-preview.scss
+$about-margin-top: 20px;
+$about-margin-bottom: 20px;
+$about-padding-top: 20px;
+$about-padding-bottom: 20px;
+$about-bg-color: #FFFFFF;
+$about-border-bottom: #CCCCCC;
+
+.about-preview {
+  margin-top: $about-margin-top;
+  margin-bottom: $about-margin-bottom;
+  padding-top: $about-padding-top;
+  padding-bottom: $about-padding-bottom;
+  border-bottom: solid 1px $about-border-bottom;
+  background-color: $about-bg-color;
+}
