@@ -460,6 +460,10 @@
 .long-delay {
   animation-delay: 700ms !important; }
 
+body {
+  background-color: #FF0000;
+  background-image: url(); }
+
 .hero {
   margin-top: 0px;
   margin-bottom: 0px;

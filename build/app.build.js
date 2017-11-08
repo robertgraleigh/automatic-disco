@@ -13318,13 +13318,23 @@ DropdownMenu.defaults = {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function($) {
 
 __webpack_require__(16);
 
 __webpack_require__(17);
 
 __webpack_require__(31);
+
+// import foundation using npm install
+$(document).foundation();
+
+// import font-awesome-webpack
+/*jshint esversion: 6 */
+// main app.js entry file
+
+// import main scss file
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 16 */
@@ -13350,19 +13360,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__js_foundation_util_nest__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__js_foundation_util_timer__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__js_foundation_util_touch__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__js_foundation_abide__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__js_foundation_accordion__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__js_foundation_accordionMenu__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__js_foundation_drilldown__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__js_foundation_dropdown__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__js_foundation_dropdownMenu__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__js_foundation_magellan__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__js_foundation_offcanvas__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__js_foundation_orbit__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__js_foundation_responsiveMenu__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__js_foundation_reveal__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__js_foundation_slider__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__js_foundation_sticky__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__js_foundation_util_triggers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__js_foundation_abide__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__js_foundation_accordion__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__js_foundation_accordionMenu__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__js_foundation_drilldown__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__js_foundation_dropdown__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__js_foundation_dropdownMenu__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__js_foundation_magellan__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__js_foundation_offcanvas__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__js_foundation_orbit__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__js_foundation_responsiveMenu__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__js_foundation_reveal__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__js_foundation_slider__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__js_foundation_smoothScroll__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__js_foundation_sticky__ = __webpack_require__(30);
 
 
 
@@ -13399,26 +13411,26 @@ __WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].Timer = 
 
 __WEBPACK_IMPORTED_MODULE_10__js_foundation_util_touch__["a" /* Touch */].init(__WEBPACK_IMPORTED_MODULE_0_jquery___default.a);
 
-// import { Triggers } from '../../js/foundation.util.triggers';
-// Triggers.init($, Foundation);
+
+__WEBPACK_IMPORTED_MODULE_11__js_foundation_util_triggers__["a" /* Triggers */].init(__WEBPACK_IMPORTED_MODULE_0_jquery___default.a, __WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */]);
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_11__js_foundation_abide__["a" /* Abide */], 'Abide');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_12__js_foundation_abide__["a" /* Abide */], 'Abide');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_12__js_foundation_accordion__["a" /* Accordion */], 'Accordion');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_13__js_foundation_accordion__["a" /* Accordion */], 'Accordion');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_13__js_foundation_accordionMenu__["a" /* AccordionMenu */], 'AccordionMenu');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_14__js_foundation_accordionMenu__["a" /* AccordionMenu */], 'AccordionMenu');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_14__js_foundation_drilldown__["a" /* Drilldown */], 'Drilldown');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_15__js_foundation_drilldown__["a" /* Drilldown */], 'Drilldown');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_15__js_foundation_dropdown__["a" /* Dropdown */], 'Dropdown');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_16__js_foundation_dropdown__["a" /* Dropdown */], 'Dropdown');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_16__js_foundation_dropdownMenu__["a" /* DropdownMenu */], 'DropdownMenu');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_17__js_foundation_dropdownMenu__["a" /* DropdownMenu */], 'DropdownMenu');
 
 // import { Equalizer } from '../../js/foundation.equalizer';
 // Foundation.plugin(Equalizer, 'Equalizer');
@@ -13427,31 +13439,31 @@ __WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(_
 // Foundation.plugin(Interchange, 'Interchange');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_17__js_foundation_magellan__["a" /* Magellan */], 'Magellan');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_18__js_foundation_magellan__["a" /* Magellan */], 'Magellan');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_18__js_foundation_offcanvas__["a" /* OffCanvas */], 'OffCanvas');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_19__js_foundation_offcanvas__["a" /* OffCanvas */], 'OffCanvas');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_19__js_foundation_orbit__["a" /* Orbit */], 'Orbit');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_20__js_foundation_orbit__["a" /* Orbit */], 'Orbit');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_20__js_foundation_responsiveMenu__["a" /* ResponsiveMenu */], 'ResponsiveMenu');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_21__js_foundation_responsiveMenu__["a" /* ResponsiveMenu */], 'ResponsiveMenu');
 
 // import { ResponsiveToggle } from '../../js/foundation.responsiveToggle';
 // Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_21__js_foundation_reveal__["a" /* Reveal */], 'Reveal');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_22__js_foundation_reveal__["a" /* Reveal */], 'Reveal');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_22__js_foundation_slider__["a" /* Slider */], 'Slider');
-
-// import { SmoothScroll } from '../../js/foundation.smoothScroll';
-// Foundation.plugin(SmoothScroll, 'SmoothScroll');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_23__js_foundation_slider__["a" /* Slider */], 'Slider');
 
 
-__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_23__js_foundation_sticky__["a" /* Sticky */], 'Sticky');
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_24__js_foundation_smoothScroll__["a" /* SmoothScroll */], 'SmoothScroll');
+
+
+__WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(__WEBPACK_IMPORTED_MODULE_25__js_foundation_sticky__["a" /* Sticky */], 'Sticky');
 
 // import { Tabs } from '../../js/foundation.tabs';
 // Foundation.plugin(Tabs, 'Tabs');

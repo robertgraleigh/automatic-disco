@@ -4,11 +4,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Test Page</title>
+    <title>Robert G. Raleigh</title>
 
   <link href="css/app.build.css" rel="stylesheet"></head>
   <body>
     <section class="contact">
+      <a id="top"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid padding-x">
           <div class="large-6 cell">
@@ -21,14 +22,14 @@
             <ul class="horizontal menu align-right">
               <li>
                 <a href="">
-                  <i class="fa fa-phone fa-1x"></i>Phone</a>
+                  <i class="fa fa-phone fa-1x"></i>&nbsp; +1 xxx-xxx-xxxx</a>
               </li>
               <li>
                 <a href="">
-                  <i class="fa fa-mail fa-1x"></i>Email</a>
+                  <i class="fa fa-mail fa-1x"></i>&nbsp; info@robertgraleigh.com</a>
               </li>
               <li>
-                <a href=""><i class="fa fa-slack fa-1x"></i>Slack</a>
+                <a href=""><i class="fa fa-slack fa-1x"></i>&nbsp; @RobertGRaleigh</a>
               </li>
             </ul>
           </div>
@@ -36,34 +37,46 @@
       </div>
     </section>
 
-    <nav class="top-bar">
-      <div class="topbar-left">
-        <ul class="horizontal menu">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skillset</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Products</a></li>
-          <li>
-            <a href="#">
-              Past Clients
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Past Projects
-            </a>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="topbar-right">
-        <ul class="horizontal menu">
-          <li><a href="#" class="primary button">About Us</a></li>
-          <li><a href="#" class="secondary button">Blog</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div id="primary-nav" data-sticky-container>
+      <nav class="top-bar" data-margin-top="100" data-top-anchor="header:bottom" data-sticky>
+        <div class="topbar-left">
+          <ul class="horizontal dropdown menu" data-dropdown-menu >
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about" data-smooth-scroll>About</a></li>
+            <li>
+              <a href="#">Skillset</a>
+              <ul class="menu">
+                <li>
+                  <a href="#pm" data-smooth-scroll>Project Management</a>
+                </li>
+                <li>
+                  <a href="#fe-dev" data-smooth-scroll>Frontend Development</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li>
+              <a href="#clients" data-smooth-scroll>
+                Past Clients
+              </a>
+            </li>
+            <li>
+              <a href="#projects" data-smooth-scroll>
+                Past Projects
+              </a>
+            </li>
+            <li><a href="#contact-info" data-smooth-scroll>Contact Info</a></li>
+          </ul>
+        </div>
+        <div class="topbar-right">
+          <ul class="horizontal menu">
+            <li><a href="#" class="primary button">About Us</a></li>
+            <li><a href="#" class="secondary button">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <header class="hero">
       <div class="grid-container">
@@ -120,7 +133,55 @@
       </div>
     </header>
 
+    <div data-sticky-container id="main-nav" style="background-color: #ff0000;">
+    	<div data-sticky data-margin-top='10' data-top-anchor="header:bottom" class="top-menu">
+
+    		<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    			<button class="menu-icon" type="button" data-toggle style="float: right; margin-top: 1rem;"></button>
+    			<div class="title-bar-title">
+    				<a href="">
+    					<img src="<?php echo base_url('inc/img/logo.png');?>" alt="Logo" height="45" width="181" />
+    				</a>
+    			</div>
+    		</div>
+
+    		<div class="top-bar" id="example-menu">
+
+
+    			<div class="top-bar-left">
+    				<ul class="menu">
+    					<li class="menu-text hide-for-small-only" style="padding-left:0; padding-right:0;">
+    						<a href="<?php echo base_url('');?>">
+    							<img src="http://placehold.it/150x50" alt="Logo" height="45" width="181" />
+    						</a>
+    					</li>
+    				</ul>
+    			</div>
+          <div class="top-bar-right">
+    				<nav>
+    					<ul class="vertical medium-horizontal menu" data-dropdown-menu>
+    						<li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+    					</ul>
+    				</nav>
+    			</div>
+    		</div>
+
+    	</div>
+    </div>
+
+    <div class="grid-container">
+      <img src="http://placehold.it/1200/333" alt="">
+      <img src="http://placehold.it/1200/444" alt="">
+      <img src="http://placehold.it/1200/555" alt="">
+      <img src="http://placehold.it/1200/666" alt="">
+      <img src="http://placehold.it/1200/777" alt="">
+    </div>
+
     <section class="about-preview">
+      <a id="about"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-4 cell">
@@ -153,6 +214,7 @@
     </section>
 
     <section class="pm-preview">
+      <a id="pm"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-12 cell">
@@ -225,6 +287,7 @@
     </section>
 
     <section class="fe-dev-preview">
+      <a id="fe-dev"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-12 cell">
@@ -327,6 +390,7 @@
     </section>
 
     <section class="clients-preview">
+      <a id="clients"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-12 cell">
@@ -513,6 +577,7 @@
     </section>
 
     <section class="projects-preview">
+      <a id="projects"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-12 cell">
@@ -699,6 +764,7 @@
     </section>
 
     <footer class="footer">
+      <a id="contact"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid-padding-x">
           <div class="large-6 cell">
@@ -746,9 +812,14 @@
       <div class="copyright">
         <div class="grid-container">
           <div class="grid-x grid-margin-x grid-padding-x">
-            <div class="large-12 cell">
+            <div class="large-6 cell">
               <p class="text-left">
                 &copy; Copyright 2007 - 2018. Robert G. Raleigh. All rights reserved.
+              </p>
+            </div>
+            <div class="large-6 cell">
+              <p class="text-right">
+                <a href="#top" data-smooth-scroll>Back to top</a>
               </p>
             </div>
           </div>

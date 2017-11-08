@@ -1,0 +1,10 @@
+// sitewide custom scss settings
+
+// custom sitewide scss variables
+$body-background-color: #FF0000;
+$body-background-image: url();
+
+body {
+  background-color: $body-background-color;
+  background-image: $body-background-image;
+}

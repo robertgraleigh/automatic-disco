@@ -9,3 +9,5 @@ import 'foundation-sites/dist/js/npm.js';
 
 // import font-awesome-webpack
 import 'font-awesome-webpack';
+
+$(document).foundation();
