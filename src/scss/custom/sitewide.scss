@@ -1,10 +1,68 @@
 // sitewide custom scss settings
 
+// google fonts imports
+//@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:800');
+
 // custom sitewide scss variables
-$body-background-color: #FF0000;
-$body-background-image: url();
+
+$body-background-color: #FFFFFF !important;
+$body-background-image: none;
+$nav-bg-color: #FFFFFF;
+$nav-link-color: #ff9900;
+$section-border-top: none;
+$section-border-bottom: solid 1px #cccccc;
+$custom-heading-font: "Merriweather Sans", sans-serif;
+$custom-heading-font-weight: bold;
+$custom-text-transform: uppercase;
+
+html {
+  background-color: $body-background-color;
+}
 
 body {
   background-color: $body-background-color;
   background-image: $body-background-image;
+}
+
+nav {
+  background-color: $nav-bg-color;
+  color: $nav-link-color;
+}
+
+section {
+  border-top: $section-border-top;
+  border-bottom: $section-border-bottom;
+}
+
+h1 {
+  font-family: $custom-heading-font;
+  font-weight: $custom-heading-font-weight;
+  text-transform: $custom-text-transform;
+}
+
+h2 {
+  font-family: $custom-heading-font;
+  font-weight: $custom-heading-font-weight;
+  text-transform: $custom-text-transform;
+}
+
+h3 {
+  font-family: $custom-heading-font;
+  font-weight: $custom-heading-font-weight;
+}
+
+h4 {
+  font-family: $custom-heading-font;
+  font-weight: $custom-heading-font-weight;
+}
+
+h5 {
+  font-family: $custom-heading-font;
+  font-weight: $custom-heading-font-weight;
+}
+
+h6 {
+  font-family: $custom-heading-font;
+  font-weight: $custom-heading-font-weight;
 }

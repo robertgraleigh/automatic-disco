@@ -1,9 +1,26 @@
+// footer.scss
+
+// footer variables
 $footer-bg-color: #222222;
 $footer-text-color: #999999;
 $footer-display-font-family: Helvetica, Arial, sans-serif;
+$footer-margin-top: 0px;
+$footer-margin-bottom: 0px;
+$footer-padding-top: 20px;
+$footer-padding-bottom: 20px;
+$footer-text-transform: uppercase;
 
+// footer styles
 .footer {
   background-color: $footer-bg-color;
   color: $footer-text-color;
   font-family: $footer-display-font-family;
+  margin-top: $footer-margin-top;
+  margin-bottom: $footer-margin-bottom;
+  padding-top: $footer-padding-top;
+  padding-bottom: $footer-padding-bottom;
+}
+
+.footer h1, h2, h3 {
+  text-transform: $footer-text-transform;
 }

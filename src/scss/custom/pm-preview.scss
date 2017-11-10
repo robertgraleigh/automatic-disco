@@ -14,3 +14,7 @@ $pm-management-border-bottom: #CCCCCC;
   border-bottom: solid 1px $pm-management-border-bottom;
   background-color: $pm-management-bg-color;
 }
+
+.pm-preview h2, h3, h4 {
+  text-transform: none;
+}

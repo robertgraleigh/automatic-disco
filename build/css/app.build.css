@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:800);@charset "UTF-8";
 /**
  * Foundation for Sites by ZURB
  * Version 6.4.4-rc1
@@ -460,9 +460,107 @@
 .long-delay {
   animation-delay: 700ms !important; }
 
+html {
+  background-color: #FFFFFF !important; }
+
 body {
-  background-color: #FF0000;
-  background-image: url(); }
+  background-color: #FFFFFF !important;
+  background-image: none; }
+
+nav {
+  background-color: #FFFFFF;
+  color: #ff9900; }
+
+section {
+  border-top: none;
+  border-bottom: solid 1px #cccccc; }
+
+h1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold; }
+
+h4 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold; }
+
+h5 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold; }
+
+h6 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold; }
+
+.contact-menu {
+  background-color: #333333;
+  background-image: none;
+  color: #CCCCCC;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: none;
+  border-bottom: none; }
+
+.contact-menu ul li a {
+  font-family: "Merriweather Sans", "Arial", sans-serif !important;
+  font-size: 14px; }
+
+.primary-nav {
+  background-color: #FFFFFF !important;
+  background-image: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: none;
+  border-bottom: solid 5px #333333; }
+
+.top-bar {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #FFFFFF !important;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333; }
+
+.top-bar ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #FFFFFF !important; }
+
+.secondary-nav {
+  background-color: #FFFFFF;
+  background-image: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-top: none;
+  border-bottom: solid 5px #333333; }
+
+.footer-nav {
+  background-color: #FFFFFF;
+  background-image: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-top: none;
+  border-bottom: solid 5px #333333; }
 
 .hero {
   margin-top: 0px;
@@ -472,9 +570,22 @@ body {
   background-color: #0075BD;
   color: #FFFFFF; }
 
-.hero-tagline {
-  padding-top: 20px;
-  padding-bottom: 0px;
+.hero-heading {
+  font-family: "Merriweather Sans", "Arial", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 100px; }
+
+.hero-subheading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-family: "Merriweather Sans", "Arial", sans-serif;
+  font-weight: 400;
   color: #FFFFFF; }
 
 .about-preview {
@@ -492,6 +603,9 @@ body {
   padding-bottom: 20px;
   border-bottom: solid 1px #CCCCCC;
   background-color: #FFFFFF; }
+
+.pm-preview h2, h3, h4 {
+  text-transform: none; }
 
 .fe-dev-preview {
   margin-top: 20px;
@@ -604,7 +718,14 @@ body {
 .footer {
   background-color: #222222;
   color: #999999;
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.footer h1, h2, h3 {
+  text-transform: uppercase; }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document

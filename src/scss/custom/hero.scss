@@ -1,18 +1,24 @@
-// hero partial _hero.scss
+// hero.scss
+
+// hero variables
 $hero-margin-top: 0px;
 $hero-margin-bottom: 0px;
 $hero-padding-top: 10vh;
 $hero-padding-bottom: 10vh;
-$hero-heading-font-family: 'Rubik', sans-serif;
-$hero-heading-font-color: #FFFFFF;
-$hero-display-text: 'Georgia', 'Times New Roman', sans-serif;
-$hero-display-text-color: #CCCCCC;
 $hero-background-color: #0075BD;
 $hero-background-image: url('http://placehold.it/1000x1000');
 
-// hero tagline
-$hero-tagline-padding-top: 20px;
-$hero-tagline-padding-bottom: 0px;
+// hero heading variables
+$hero-heading-font: "Merriweather Sans", "Arial", sans-serif;
+$hero-heading-font-weight: 800;
+$hero-heading-font-color: #FFFFFF;
+
+// hero subheading variables
+$hero-subheading-padding-top: 100px;
+$hero-subheading-padding-bottom: 20px;
+$hero-subheading-font: "Merriweather Sans", "Arial", sans-serif;
+$hero-subheading-font-weight: 400;
+$hero-subheading-font-color: #FFFFFF;
 
 .hero {
   margin-top: $hero-margin-top;
@@ -20,12 +26,27 @@ $hero-tagline-padding-bottom: 0px;
   padding-top: $hero-padding-top;
   padding-bottom: $hero-padding-bottom;
   background-color: $hero-background-color;
-  //background-image: $hero-background-image;
   color: $hero-heading-font-color;
 }
 
-.hero-tagline {
-  padding-top: $hero-tagline-padding-top;
-  padding-bottom: $hero-tagline-padding-bottom;
-  color: $hero-heading-font-color;
+// hero heading
+.hero-heading {
+  font-family: $hero-heading-font;
+  font-weight: $hero-heading-font-weight;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+
+// hero subheading
+.hero-subheading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: $hero-subheading-padding-top;
+  padding-bottom: $hero-subheading-padding-bottom;
+  font-family: $hero-subheading-font;
+  font-weight: $hero-subheading-font-weight;
+  color: $hero-subheading-font-color;
 }

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10874,126 +10874,10 @@ function parseStyleToObject(str) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Move; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Motion; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_core__ = __webpack_require__(1);
-
-
-
-
-
-/**
- * Motion module.
- * @module foundation.motion
- */
-
-const initClasses   = ['mui-enter', 'mui-leave'];
-const activeClasses = ['mui-enter-active', 'mui-leave-active'];
-
-const Motion = {
-  animateIn: function(element, animation, cb) {
-    animate(true, element, animation, cb);
-  },
-
-  animateOut: function(element, animation, cb) {
-    animate(false, element, animation, cb);
-  }
-}
-
-function Move(duration, elem, fn){
-  var anim, prog, start = null;
-  // console.log('called');
-
-  if (duration === 0) {
-    fn.apply(elem);
-    elem.trigger('finished.zf.animate', [elem]).triggerHandler('finished.zf.animate', [elem]);
-    return;
-  }
-
-  function move(ts){
-    if(!start) start = ts;
-    // console.log(start, ts);
-    prog = ts - start;
-    fn.apply(elem);
-
-    if(prog < duration){ anim = window.requestAnimationFrame(move, elem); }
-    else{
-      window.cancelAnimationFrame(anim);
-      elem.trigger('finished.zf.animate', [elem]).triggerHandler('finished.zf.animate', [elem]);
-    }
-  }
-  anim = window.requestAnimationFrame(move);
-}
-
-/**
- * Animates an element in or out using a CSS transition class.
- * @function
- * @private
- * @param {Boolean} isIn - Defines if the animation is in or out.
- * @param {Object} element - jQuery or HTML object to animate.
- * @param {String} animation - CSS class to use.
- * @param {Function} cb - Callback to run when animation is finished.
- */
-function animate(isIn, element, animation, cb) {
-  element = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(element).eq(0);
-
-  if (!element.length) return;
-
-  var initClass = isIn ? initClasses[0] : initClasses[1];
-  var activeClass = isIn ? activeClasses[0] : activeClasses[1];
-
-  // Set up the animation
-  reset();
-
-  element
-    .addClass(animation)
-    .css('transition', 'none');
-
-  requestAnimationFrame(() => {
-    element.addClass(initClass);
-    if (isIn) element.show();
-  });
-
-  // Start the animation
-  requestAnimationFrame(() => {
-    element[0].offsetWidth;
-    element
-      .css('transition', '')
-      .addClass(activeClass);
-  });
-
-  // Clean up the animation when it finishes
-  element.one(Object(__WEBPACK_IMPORTED_MODULE_1__foundation_util_core__["c" /* transitionend */])(element), finish);
-
-  // Hides the element (for out animations), resets the element, and runs a callback
-  function finish() {
-    if (!isIn) element.hide();
-    reset();
-    if (cb) cb.apply(element);
-  }
-
-  // Resets transitions and removes motion-specific classes
-  function reset() {
-    element[0].style.transitionDuration = 0;
-    element.removeClass(`${initClass} ${activeClass} ${animation}`);
-  }
-}
-
-
-
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Triggers; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_motion__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_motion__ = __webpack_require__(6);
 
 
 
@@ -11260,6 +11144,122 @@ Triggers.init = function($, Foundation) {
     Foundation.IHearYou = Triggers.Initializers.addGlobalListeners
   }
 }
+
+
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Move; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Motion; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_core__ = __webpack_require__(1);
+
+
+
+
+
+/**
+ * Motion module.
+ * @module foundation.motion
+ */
+
+const initClasses   = ['mui-enter', 'mui-leave'];
+const activeClasses = ['mui-enter-active', 'mui-leave-active'];
+
+const Motion = {
+  animateIn: function(element, animation, cb) {
+    animate(true, element, animation, cb);
+  },
+
+  animateOut: function(element, animation, cb) {
+    animate(false, element, animation, cb);
+  }
+}
+
+function Move(duration, elem, fn){
+  var anim, prog, start = null;
+  // console.log('called');
+
+  if (duration === 0) {
+    fn.apply(elem);
+    elem.trigger('finished.zf.animate', [elem]).triggerHandler('finished.zf.animate', [elem]);
+    return;
+  }
+
+  function move(ts){
+    if(!start) start = ts;
+    // console.log(start, ts);
+    prog = ts - start;
+    fn.apply(elem);
+
+    if(prog < duration){ anim = window.requestAnimationFrame(move, elem); }
+    else{
+      window.cancelAnimationFrame(anim);
+      elem.trigger('finished.zf.animate', [elem]).triggerHandler('finished.zf.animate', [elem]);
+    }
+  }
+  anim = window.requestAnimationFrame(move);
+}
+
+/**
+ * Animates an element in or out using a CSS transition class.
+ * @function
+ * @private
+ * @param {Boolean} isIn - Defines if the animation is in or out.
+ * @param {Object} element - jQuery or HTML object to animate.
+ * @param {String} animation - CSS class to use.
+ * @param {Function} cb - Callback to run when animation is finished.
+ */
+function animate(isIn, element, animation, cb) {
+  element = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(element).eq(0);
+
+  if (!element.length) return;
+
+  var initClass = isIn ? initClasses[0] : initClasses[1];
+  var activeClass = isIn ? activeClasses[0] : activeClasses[1];
+
+  // Set up the animation
+  reset();
+
+  element
+    .addClass(animation)
+    .css('transition', 'none');
+
+  requestAnimationFrame(() => {
+    element.addClass(initClass);
+    if (isIn) element.show();
+  });
+
+  // Start the animation
+  requestAnimationFrame(() => {
+    element[0].offsetWidth;
+    element
+      .css('transition', '')
+      .addClass(activeClass);
+  });
+
+  // Clean up the animation when it finishes
+  element.one(Object(__WEBPACK_IMPORTED_MODULE_1__foundation_util_core__["c" /* transitionend */])(element), finish);
+
+  // Hides the element (for out animations), resets the element, and runs a callback
+  function finish() {
+    if (!isIn) element.hide();
+    reset();
+    if (cb) cb.apply(element);
+  }
+
+  // Resets transitions and removes motion-specific classes
+  function reset() {
+    element[0].style.transitionDuration = 0;
+    element.removeClass(`${initClass} ${activeClass} ${animation}`);
+  }
+}
+
 
 
 
@@ -13315,14 +13315,161 @@ DropdownMenu.defaults = {
 
 /***/ }),
 /* 15 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmoothScroll; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_plugin__ = __webpack_require__(2);
+
+
+
+
+
+
+/**
+ * SmoothScroll module.
+ * @module foundation.smooth-scroll
+ */
+class SmoothScroll extends __WEBPACK_IMPORTED_MODULE_2__foundation_plugin__["a" /* Plugin */] {
+  /**
+   * Creates a new instance of SmoothScroll.
+   * @class
+   * @name SmoothScroll
+   * @fires SmoothScroll#init
+   * @param {Object} element - jQuery object to add the trigger to.
+   * @param {Object} options - Overrides to the default plugin settings.
+   */
+    _setup(element, options) {
+        this.$element = element;
+        this.options = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.extend({}, SmoothScroll.defaults, this.$element.data(), options);
+        this.className = 'SmoothScroll'; // ie9 back compat
+
+        this._init();
+    }
+
+    /**
+     * Initialize the SmoothScroll plugin
+     * @private
+     */
+    _init() {
+        var id = this.$element[0].id || Object(__WEBPACK_IMPORTED_MODULE_1__foundation_util_core__["a" /* GetYoDigits */])(6, 'smooth-scroll');
+        var _this = this;
+        this.$element.attr({
+            'id': id
+        });
+
+        this._events();
+    }
+
+    /**
+     * Initializes events for SmoothScroll.
+     * @private
+     */
+    _events() {
+        var _this = this;
+
+        // click handler function.
+        var handleLinkClick = function(e) {
+            // exit function if the event source isn't coming from an anchor with href attribute starts with '#'
+            if(!__WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).is('a[href^="#"]'))  {
+                return false;
+            }
+
+            var arrival = this.getAttribute('href');
+
+            _this._inTransition = true;
+
+            SmoothScroll.scrollToLoc(arrival, _this.options, function() {
+                _this._inTransition = false;
+            });
+
+            e.preventDefault();
+        };
+
+        this.$element.on('click.zf.smoothScroll', handleLinkClick)
+        this.$element.on('click.zf.smoothScroll', 'a[href^="#"]', handleLinkClick);
+    }
+
+    /**
+     * Function to scroll to a given location on the page.
+     * @param {String} loc - A properly formatted jQuery id selector. Example: '#foo'
+     * @param {Object} options - The options to use.
+     * @param {Function} callback - The callback function.
+     * @static
+     * @function
+     */
+    static scrollToLoc(loc, options = SmoothScroll.defaults, callback) {
+        // Do nothing if target does not exist to prevent errors
+        if (!__WEBPACK_IMPORTED_MODULE_0_jquery___default()(loc).length) {
+            return false;
+        }
+
+        var scrollPos = Math.round(__WEBPACK_IMPORTED_MODULE_0_jquery___default()(loc).offset().top - options.threshold / 2 - options.offset);
+
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()('html, body').stop(true).animate(
+            { scrollTop: scrollPos },
+            options.animationDuration,
+            options.animationEasing,
+            function() {
+                if(callback && typeof callback == "function"){
+                    callback();
+                }
+            }
+        );
+    }
+}
+
+/**
+ * Default settings for plugin.
+ */
+SmoothScroll.defaults = {
+  /**
+   * Amount of time, in ms, the animated scrolling should take between locations.
+   * @option
+   * @type {number}
+   * @default 500
+   */
+  animationDuration: 500,
+  /**
+   * Animation style to use when scrolling between locations. Can be `'swing'` or `'linear'`.
+   * @option
+   * @type {string}
+   * @default 'linear'
+   * @see {@link https://api.jquery.com/animate|Jquery animate}
+   */
+  animationEasing: 'linear',
+  /**
+   * Number of pixels to use as a marker for location changes.
+   * @option
+   * @type {number}
+   * @default 50
+   */
+  threshold: 50,
+  /**
+   * Number of pixels to offset the scroll of the page on item click if using a sticky nav bar.
+   * @option
+   * @type {number}
+   * @default 0
+   */
+  offset: 0
+}
+
+
+
+
+/***/ }),
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-__webpack_require__(16);
-
 __webpack_require__(17);
+
+__webpack_require__(18);
 
 __webpack_require__(31);
 
@@ -13337,43 +13484,43 @@ $(document).foundation();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_foundation_core__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_foundation_core__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_foundation_util_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_foundation_util_box__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__js_foundation_util_imageLoader__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__js_foundation_util_keyboard__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__js_foundation_util_mediaQuery__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_foundation_util_motion__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__js_foundation_util_motion__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__js_foundation_util_nest__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__js_foundation_util_timer__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__js_foundation_util_touch__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__js_foundation_util_triggers__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__js_foundation_abide__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__js_foundation_accordion__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__js_foundation_util_triggers__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__js_foundation_abide__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__js_foundation_accordion__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__js_foundation_accordionMenu__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__js_foundation_drilldown__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__js_foundation_dropdown__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__js_foundation_dropdown__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__js_foundation_dropdownMenu__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__js_foundation_magellan__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__js_foundation_magellan__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__js_foundation_offcanvas__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__js_foundation_orbit__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__js_foundation_responsiveMenu__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__js_foundation_reveal__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__js_foundation_slider__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__js_foundation_smoothScroll__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__js_foundation_smoothScroll__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__js_foundation_sticky__ = __webpack_require__(30);
 
 
@@ -13481,7 +13628,7 @@ __WEBPACK_IMPORTED_MODULE_1__js_foundation_core__["a" /* Foundation */].plugin(_
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13830,7 +13977,7 @@ function hyphenate(str) {
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14428,7 +14575,7 @@ Abide.defaults = {
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14770,7 +14917,7 @@ Accordion.defaults = {
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14779,8 +14926,8 @@ Accordion.defaults = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_keyboard__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_util_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_positionable__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__foundation_util_triggers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_positionable__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__foundation_util_triggers__ = __webpack_require__(5);
 
 
 
@@ -15197,7 +15344,7 @@ Dropdown.defaults = {
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15422,7 +15569,7 @@ Positionable.defaults = {
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15431,7 +15578,7 @@ Positionable.defaults = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_plugin__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_smoothScroll__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_smoothScroll__ = __webpack_require__(15);
 
 
 
@@ -15692,153 +15839,6 @@ Magellan.defaults = {
 
 
 /***/ }),
-/* 24 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmoothScroll; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_plugin__ = __webpack_require__(2);
-
-
-
-
-
-
-/**
- * SmoothScroll module.
- * @module foundation.smooth-scroll
- */
-class SmoothScroll extends __WEBPACK_IMPORTED_MODULE_2__foundation_plugin__["a" /* Plugin */] {
-  /**
-   * Creates a new instance of SmoothScroll.
-   * @class
-   * @name SmoothScroll
-   * @fires SmoothScroll#init
-   * @param {Object} element - jQuery object to add the trigger to.
-   * @param {Object} options - Overrides to the default plugin settings.
-   */
-    _setup(element, options) {
-        this.$element = element;
-        this.options = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.extend({}, SmoothScroll.defaults, this.$element.data(), options);
-        this.className = 'SmoothScroll'; // ie9 back compat
-
-        this._init();
-    }
-
-    /**
-     * Initialize the SmoothScroll plugin
-     * @private
-     */
-    _init() {
-        var id = this.$element[0].id || Object(__WEBPACK_IMPORTED_MODULE_1__foundation_util_core__["a" /* GetYoDigits */])(6, 'smooth-scroll');
-        var _this = this;
-        this.$element.attr({
-            'id': id
-        });
-
-        this._events();
-    }
-
-    /**
-     * Initializes events for SmoothScroll.
-     * @private
-     */
-    _events() {
-        var _this = this;
-
-        // click handler function.
-        var handleLinkClick = function(e) {
-            // exit function if the event source isn't coming from an anchor with href attribute starts with '#'
-            if(!__WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).is('a[href^="#"]'))  {
-                return false;
-            }
-
-            var arrival = this.getAttribute('href');
-
-            _this._inTransition = true;
-
-            SmoothScroll.scrollToLoc(arrival, _this.options, function() {
-                _this._inTransition = false;
-            });
-
-            e.preventDefault();
-        };
-
-        this.$element.on('click.zf.smoothScroll', handleLinkClick)
-        this.$element.on('click.zf.smoothScroll', 'a[href^="#"]', handleLinkClick);
-    }
-
-    /**
-     * Function to scroll to a given location on the page.
-     * @param {String} loc - A properly formatted jQuery id selector. Example: '#foo'
-     * @param {Object} options - The options to use.
-     * @param {Function} callback - The callback function.
-     * @static
-     * @function
-     */
-    static scrollToLoc(loc, options = SmoothScroll.defaults, callback) {
-        // Do nothing if target does not exist to prevent errors
-        if (!__WEBPACK_IMPORTED_MODULE_0_jquery___default()(loc).length) {
-            return false;
-        }
-
-        var scrollPos = Math.round(__WEBPACK_IMPORTED_MODULE_0_jquery___default()(loc).offset().top - options.threshold / 2 - options.offset);
-
-        __WEBPACK_IMPORTED_MODULE_0_jquery___default()('html, body').stop(true).animate(
-            { scrollTop: scrollPos },
-            options.animationDuration,
-            options.animationEasing,
-            function() {
-                if(callback && typeof callback == "function"){
-                    callback();
-                }
-            }
-        );
-    }
-}
-
-/**
- * Default settings for plugin.
- */
-SmoothScroll.defaults = {
-  /**
-   * Amount of time, in ms, the animated scrolling should take between locations.
-   * @option
-   * @type {number}
-   * @default 500
-   */
-  animationDuration: 500,
-  /**
-   * Animation style to use when scrolling between locations. Can be `'swing'` or `'linear'`.
-   * @option
-   * @type {string}
-   * @default 'linear'
-   * @see {@link https://api.jquery.com/animate|Jquery animate}
-   */
-  animationEasing: 'linear',
-  /**
-   * Number of pixels to use as a marker for location changes.
-   * @option
-   * @type {number}
-   * @default 50
-   */
-  threshold: 50,
-  /**
-   * Number of pixels to offset the scroll of the page on item click if using a sticky nav bar.
-   * @option
-   * @type {number}
-   * @default 0
-   */
-  offset: 0
-}
-
-
-
-
-/***/ }),
 /* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -15850,7 +15850,7 @@ SmoothScroll.defaults = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_util_mediaQuery__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_util_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__foundation_plugin__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__foundation_util_triggers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__foundation_util_triggers__ = __webpack_require__(5);
 
 
 
@@ -16411,7 +16411,7 @@ OffCanvas.defaults = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_keyboard__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_util_motion__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_util_motion__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_util_timer__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__foundation_util_imageLoader__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__foundation_util_core__ = __webpack_require__(1);
@@ -17131,9 +17131,9 @@ ResponsiveMenu.defaults = {};
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_keyboard__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_util_mediaQuery__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_util_motion__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_util_motion__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__foundation_plugin__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__foundation_util_triggers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__foundation_util_triggers__ = __webpack_require__(5);
 
 
 
@@ -17731,11 +17731,11 @@ Reveal.defaults = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_keyboard__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_util_motion__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_util_motion__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_util_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__foundation_plugin__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__foundation_util_touch__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__foundation_util_triggers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__foundation_util_triggers__ = __webpack_require__(5);
 
 
 
@@ -18461,7 +18461,7 @@ function baseLog(base, value) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__foundation_util_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__foundation_util_mediaQuery__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__foundation_plugin__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__foundation_util_triggers__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__foundation_util_triggers__ = __webpack_require__(5);
 
 
 
