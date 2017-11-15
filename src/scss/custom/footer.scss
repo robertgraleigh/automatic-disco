@@ -6,9 +6,21 @@ $footer-text-color: #999999;
 $footer-display-font-family: Helvetica, Arial, sans-serif;
 $footer-margin-top: 0px;
 $footer-margin-bottom: 0px;
-$footer-padding-top: 20px;
-$footer-padding-bottom: 20px;
+$footer-padding-top: 40px;
+$footer-padding-bottom: 40px;
 $footer-text-transform: uppercase;
+
+// footer heading variables
+$footer-heading-font: "Merriweather Sans", "Arial", sans-serif;
+$footer-heading-font-size: 18px;
+$footer-heading-font-weight: bold;
+$footer-heading-text-transform: uppercase;
+
+// copright variables
+$copyright-margin-top: 0px;
+$copyright-margin-bottom: 0px;
+$copyright-padding-top: 20px;
+$copyright-padding-bottom: 0px;
 
 // footer styles
 .footer {
@@ -21,6 +33,26 @@ $footer-text-transform: uppercase;
   padding-bottom: $footer-padding-bottom;
 }
 
-.footer h1, h2, h3 {
-  text-transform: $footer-text-transform;
+.footer-heading {
+  font-family: $footer-heading-font;
+  font-size: $footer-heading-font-size;
+  font-weight: $footer-heading-font-weight;
+  text-transform: $footer-heading-text-transform;
+}
+
+.footer-paragraph {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px;
+}
+
+.footer-address {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px;
+}
+
+.copyright {
+  margin-top: $copyright-margin-top;
+  margin-bottom: $copyright-margin-bottom;
+  padding-top: $copyright-padding-top;
+  padding-bottom: $copyright-padding-bottom;
 }

@@ -1,8 +1,17 @@
+// client-card.scss
+
+// client-card variables
+$client-card-border-top: solid 5px #767676;
+
 .client-card {
   background-color: $white;
-  border: 1px solid $light-gray;
-  padding: 1rem;
+  border-top: $client-card-border-top;
+  border-left: 1px solid $light-gray;
+  border-right: solid 1px $light-gray;
+  border-bottom: solid 1px $light-gray;
+  margin-top: 0rem;
   margin-bottom: 1.5rem;
+  padding: 1rem;
 }
 
 .client-card-thumbnail {

@@ -1,7 +1,17 @@
+// project-card.scss
+
+// project-cart variables
+$project-card-border-top: solid 5px #0070C0;
+$project-card-bg-color: #FFFFFF !important;
+
 .project-card {
-  background-color: $white;
-  border: 1px solid $light-gray;
+  background-color: $project-card-bg-color;
+  border-top: $project-card-border-top;
+  border-left: 1px solid $light-gray;
+  border-right: solid 1px $light-gray;
+  border-bottom: solid 1px $light-gray;
   padding: 1rem;
+  margin-top: 0rem;
   margin-bottom: 1.5rem;
 }
 

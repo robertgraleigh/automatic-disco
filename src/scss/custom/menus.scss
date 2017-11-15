@@ -4,6 +4,7 @@
 $contact-bg-color: #333333;
 $contact-bg-image: none;
 $contact-link-color: #CCCCCC;
+$contact-text-transform: uppercase;
 $contact-margin-top: 0px;
 $contact-margin-bottom: 0px;
 $contact-padding-top: 10px;
@@ -11,10 +12,12 @@ $contact-padding-bottom: 10px;
 $contact-border-top: none;
 $contact-border-bottom: none;
 
+
 // primary nav variables
 $primary-nav-bg-color: #FFFFFF !important;
 $primary-nav-bg-image: none;
 $primary-nav-link-color: white;
+$primary-nav-link-weight: bold;
 $primary-nav-margin-top: 0px;
 $primary-nav-margin-bottom: 0px;
 $primary-nav-padding-top: 40px;
@@ -58,8 +61,12 @@ $footer-nav-border-bottom: solid 5px #333333;
 }
 
 .contact-menu ul li a {
-  font-family: "Merriweather Sans", "Arial", sans-serif !important;
   font-size: 14px;
+}
+
+.contact-menu span {
+  font-size: 14px;
+  text-transform: $contact-text-transform;
 }
 
 // primary nav
@@ -73,6 +80,8 @@ $footer-nav-border-bottom: solid 5px #333333;
   border-top: $primary-nav-border-top;
   border-bottom: $primary-nav-border-bottom;
 }
+
+
 
 .top-bar {
   margin-top: 0px;
@@ -90,6 +99,14 @@ $footer-nav-border-bottom: solid 5px #333333;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #FFFFFF !important;
+}
+
+.top-bar ul li a {
+  font-weight: $primary-nav-link-weight;
+}
+
+.top-bar ul li a:hover {
+  font-weight: $primary-nav-link-weight;
 }
 
 // secondary nav variables

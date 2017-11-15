@@ -475,31 +475,30 @@ section {
   border-top: none;
   border-bottom: solid 1px #cccccc; }
 
-h1 {
+.section-heading {
   font-family: "Merriweather Sans", sans-serif;
+  font-size: 54px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #666666 !important; }
 
-h2 {
-  font-family: "Merriweather Sans", sans-serif;
+.section-description {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 24px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: capitalize;
+  color: #666666; }
 
-h3 {
+.section-cta {
   font-family: "Merriweather Sans", sans-serif;
-  font-weight: bold; }
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #666666;
+  padding-top: 20px; }
 
-h4 {
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: bold; }
-
-h5 {
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: bold; }
-
-h6 {
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: bold; }
+.cta-border {
+  border-top: solid 5px #0075BD; }
 
 .contact-menu {
   background-color: #333333;
@@ -513,8 +512,11 @@ h6 {
   border-bottom: none; }
 
 .contact-menu ul li a {
-  font-family: "Merriweather Sans", "Arial", sans-serif !important;
   font-size: 14px; }
+
+.contact-menu span {
+  font-size: 14px;
+  text-transform: uppercase; }
 
 .primary-nav {
   background-color: #FFFFFF !important;
@@ -541,6 +543,12 @@ h6 {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #FFFFFF !important; }
+
+.top-bar ul li a {
+  font-weight: bold; }
+
+.top-bar ul li a:hover {
+  font-weight: bold; }
 
 .secondary-nav {
   background-color: #FFFFFF;
@@ -596,6 +604,16 @@ h6 {
   border-bottom: solid 1px #CCCCCC;
   background-color: #FFFFFF; }
 
+.section-heading {
+  font-family: "Merriweather Sans", "Arial", sans-serif;
+  font-weight: 800;
+  color: #FFFFFF; }
+
+.section-subheading {
+  font-family: "Merriweather Sans", "Arial", sans-serif;
+  font-weight: 800;
+  color: #FFFFFF; }
+
 .pm-preview {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -615,11 +633,23 @@ h6 {
   border-bottom: solid 1px #CCCCCC;
   background-color: #FFFFFF; }
 
+.clients-preview {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #CCCCCC;
+  background-color: #FFFFFF; }
+
 .client-card {
   background-color: #fefefe;
-  border: 1px solid #e6e6e6;
-  padding: 1rem;
-  margin-bottom: 1.5rem; }
+  border-top: solid 5px #767676;
+  border-left: 1px solid #e6e6e6;
+  border-right: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem; }
 
 .client-card-thumbnail {
   display: block;
@@ -665,10 +695,22 @@ h6 {
 .client-card-button {
   padding-top: 20px; }
 
+.projects-preview {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: none;
+  background-color: #FFFFFF; }
+
 .project-card {
-  background-color: #fefefe;
-  border: 1px solid #e6e6e6;
+  background-color: #FFFFFF !important;
+  border-top: solid 5px #0070C0;
+  border-left: 1px solid #e6e6e6;
+  border-right: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
   padding: 1rem;
+  margin-top: 0rem;
   margin-bottom: 1.5rem; }
 
 .project-card-thumbnail {
@@ -715,17 +757,52 @@ h6 {
 .project-card-button {
   padding-top: 20px; }
 
+.get-started-preview {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: none;
+  background-color: #FCFCFC !important; }
+
+.section-heading {
+  font-size: 54px;
+  padding-bottom: 0px; }
+
+.section-description {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 29px;
+  text-transform: none;
+  padding-bottom: 40px; }
+
 .footer {
   background-color: #222222;
   color: #999999;
   font-family: Helvetica, Arial, sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
 
-.footer h1, h2, h3 {
+.footer-heading {
+  font-family: "Merriweather Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
   text-transform: uppercase; }
+
+.footer-paragraph {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px; }
+
+.footer-address {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px; }
+
+.copyright {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 0px; }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document

@@ -1,20 +1,38 @@
 // sitewide custom scss settings
 
 // google fonts imports
-//@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:800');
 
-// custom sitewide scss variables
-
+// sitewide variables
 $body-background-color: #FFFFFF !important;
 $body-background-image: none;
 $nav-bg-color: #FFFFFF;
 $nav-link-color: #ff9900;
+
+// section variables
 $section-border-top: none;
 $section-border-bottom: solid 1px #cccccc;
-$custom-heading-font: "Merriweather Sans", sans-serif;
-$custom-heading-font-weight: bold;
-$custom-text-transform: uppercase;
+
+// section heading variables
+$section-heading-font: "Merriweather Sans", sans-serif;
+$section-heading-font-size: 54px;
+$section-heading-font-weight: bold;
+$section-heading-text-transform: uppercase;
+$section-heading-color: #666666 !important;
+
+// section description variables
+$section-description-font: "Georgia", "Times New Roman", serif;
+$section-description-font-size: 24px;
+$section-description-font-weight: bold;
+$section-description-text-transform: capitalize;
+$section-description-color: #666666;
+
+//section call-to-action variables
+$section-cta-font: "Merriweather Sans", sans-serif;
+$section-cta-font-size: 24px;
+$section-cta-font-weight: bold;
+$section-cta-text-transform: uppercase;
+$section-cta-color: #666666;
 
 html {
   background-color: $body-background-color;
@@ -30,39 +48,39 @@ nav {
   color: $nav-link-color;
 }
 
+// maps to the default section element
 section {
   border-top: $section-border-top;
   border-bottom: $section-border-bottom;
 }
 
-h1 {
-  font-family: $custom-heading-font;
-  font-weight: $custom-heading-font-weight;
-  text-transform: $custom-text-transform;
+// maps to the section heading class of the custom sections
+.section-heading {
+  font-family: $section-heading-font;
+  font-size: $section-heading-font-size;
+  font-weight: $section-heading-font-weight;
+  text-transform: $section-heading-text-transform;
+  color: $section-heading-color;
 }
 
-h2 {
-  font-family: $custom-heading-font;
-  font-weight: $custom-heading-font-weight;
-  text-transform: $custom-text-transform;
+// maps to the section description class of the custom sections
+.section-description {
+  font-family: $section-description-font;
+  font-size: $section-description-font-size;
+  font-weight: $section-description-font-weight;
+  text-transform: $section-description-text-transform;
+  color: $section-description-color;
 }
 
-h3 {
-  font-family: $custom-heading-font;
-  font-weight: $custom-heading-font-weight;
+.section-cta {
+  font-family: $section-cta-font;
+  font-size: $section-cta-font-size;
+  font-weight: $section-cta-font-weight;
+  text-transform: $section-cta-text-transform;
+  color: $section-cta-color;
+  padding-top: 20px;
 }
 
-h4 {
-  font-family: $custom-heading-font;
-  font-weight: $custom-heading-font-weight;
-}
-
-h5 {
-  font-family: $custom-heading-font;
-  font-weight: $custom-heading-font-weight;
-}
-
-h6 {
-  font-family: $custom-heading-font;
-  font-weight: $custom-heading-font-weight;
+.cta-border {
+  border-top: solid 5px #0075BD;
 }

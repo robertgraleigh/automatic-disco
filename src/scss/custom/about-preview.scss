@@ -6,6 +6,12 @@ $about-padding-bottom: 20px;
 $about-bg-color: #FFFFFF;
 $about-border-bottom: #CCCCCC;
 
+// about preview heading variables
+$section-heading-font: "Merriweather Sans", "Arial", sans-serif;
+$section-heading-font-weight: 800;
+$section-heading-font-color: #FFFFFF;
+
+// about preview section
 .about-preview {
   margin-top: $about-margin-top;
   margin-bottom: $about-margin-bottom;
@@ -13,4 +19,16 @@ $about-border-bottom: #CCCCCC;
   padding-bottom: $about-padding-bottom;
   border-bottom: solid 1px $about-border-bottom;
   background-color: $about-bg-color;
+}
+
+.section-heading {
+  font-family: $section-heading-font;
+  font-weight: $section-heading-font-weight;
+  color: $section-heading-font-color;
+}
+
+.section-subheading {
+  font-family: $section-heading-font;
+  font-weight: $section-heading-font-weight;
+  color: $section-heading-font-color;
 }

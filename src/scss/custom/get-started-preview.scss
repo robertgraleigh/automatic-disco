@@ -1,0 +1,29 @@
+// get-started-preview.scss
+$get-started-margin-top: 0px;
+$get-started-margin-bottom: 0px;
+$get-started-padding-top: 20px;
+$get-started-padding-bottom: 20px;
+$get-started-bg-color: #FCFCFC !important;
+$get-started-border-bottom: none;
+
+// custom get started preview section
+.get-started-preview {
+  margin-top: $get-started-margin-top;
+  margin-bottom: $get-started-margin-bottom;
+  padding-top: $get-started-padding-top;
+  padding-bottom: $get-started-padding-bottom;
+  border-bottom: $get-started-border-bottom;
+  background-color: $get-started-bg-color;
+}
+
+.section-heading {
+  font-size: 54px;
+  padding-bottom: 0px;
+}
+
+.section-description {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 29px;
+  text-transform: none;
+  padding-bottom: 40px;
+}

@@ -1,0 +1,26 @@
+// projects-preview.scss
+
+// projects-preview variables
+$projects-preview-margin-top: 20px;
+$projects-preview-margin-bottom: 20px;
+$projects-preview-padding-top: 20px;
+$projects-preview-padding-bottom: 20px;
+$projects-preview-bg-color: #FFFFFF;
+$projects-preview-border-bottom: none;
+
+// section heading variables
+$section-heading-margin-top: 20px;
+$section-heading-margin-bottom: 20px;
+$section-heading-padding-top: 20px;
+$section-heading-padding-bottom: 20px;
+
+
+// custom projects preview section
+.projects-preview {
+  margin-top: $projects-preview-margin-top;
+  margin-bottom: $projects-preview-margin-bottom;
+  padding-top: $projects-preview-padding-top;
+  padding-bottom: $projects-preview-padding-bottom;
+  border-bottom: $projects-preview-border-bottom;
+  background-color: $projects-preview-bg-color;
+}
