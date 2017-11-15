@@ -6,6 +6,7 @@ $fe-dev-padding-bottom: 20px;
 $fe-dev-bg-color: #FFFFFF;
 $fe-dev-border-bottom: #CCCCCC;
 
+// maps to the custom frontend development section
 .fe-dev-preview {
   margin-top: $fe-dev-margin-top;
   margin-bottom: $fe-dev-margin-bottom;
@@ -13,4 +14,24 @@ $fe-dev-border-bottom: #CCCCCC;
   padding-bottom: $fe-dev-padding-bottom;
   border-bottom: solid 1px $fe-dev-border-bottom;
   background-color: $fe-dev-bg-color;
+}
+// maps to the custom skillset heading
+.skillset-heading {
+  font-family: "Merriweather Sans", sans-serif;;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// maps to the custom skillset description
+.skillset-description {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+// maps to the custom skillset icon
+.skillset-icon {
+  font-size: 36px;
+  color: #0057BD;
 }

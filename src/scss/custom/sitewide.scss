@@ -17,12 +17,12 @@ $section-border-bottom: solid 1px #cccccc;
 $section-heading-font: "Merriweather Sans", sans-serif;
 $section-heading-font-size: 54px;
 $section-heading-font-weight: bold;
-$section-heading-text-transform: uppercase;
-$section-heading-color: #666666 !important;
+$section-heading-text-transform: capitalize;
+$section-heading-color: darken($dark-gray,30%) !important;
 
 // section description variables
 $section-description-font: "Georgia", "Times New Roman", serif;
-$section-description-font-size: 24px;
+$section-description-font-size: 21px;
 $section-description-font-weight: bold;
 $section-description-text-transform: capitalize;
 $section-description-color: #666666;
@@ -52,6 +52,13 @@ nav {
 section {
   border-top: $section-border-top;
   border-bottom: $section-border-bottom;
+}
+
+// maps to the default paragraph tag
+p {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 // maps to the section heading class of the custom sections
