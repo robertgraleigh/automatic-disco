@@ -1,17 +1,15 @@
 // pm-preview.scss
 $pm-management-margin-top: 0px;
 $pm-management-margin-bottom: 0px;
-$pm-management-padding-top: 40px;
-$pm-management-padding-bottom: 40px;
+$pm-management-padding-top: 60px;
+$pm-management-padding-bottom: 60px;
 $pm-management-bg-color: #FFFFFF;
-$pm-management-border-bottom: #CCCCCC;
 
 .pm-preview {
   margin-top: $pm-management-margin-top;
   margin-bottom: $pm-management-margin-bottom;
   padding-top: $pm-management-padding-top;
   padding-bottom: $about-padding-bottom;
-  border-bottom: solid 1px $pm-management-border-bottom;
   background-color: $pm-management-bg-color;
 }
 

@@ -12,7 +12,6 @@ $contact-padding-bottom: 10px;
 $contact-border-top: none;
 $contact-border-bottom: none;
 
-
 // primary nav variables
 $primary-nav-bg-color: #FFFFFF !important;
 $primary-nav-bg-image: none;
@@ -35,6 +34,10 @@ $secondary-nav-padding-top: 0px;
 $secondary-nav-padding-bottom: 0px;
 $secondary-nav-border-top: none;
 $secondary-nav-border-bottom: solid 5px #333333;
+
+// maps to the default section element
+$cta-bar-border-top: solid 1px #CCCCCC;
+$cta-bar-border-bottom: solid 1px #CCCCCC;
 
 // footer nav variables
 $footer-nav-bg-color: #FFFFFF;
@@ -81,8 +84,6 @@ $footer-nav-border-bottom: solid 5px #333333;
   border-bottom: $primary-nav-border-bottom;
 }
 
-
-
 .top-bar {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -107,6 +108,20 @@ $footer-nav-border-bottom: solid 5px #333333;
 
 .top-bar ul li a:hover {
   font-weight: $primary-nav-link-weight;
+}
+
+// maps to the cta bar class in-between sections
+.cta-bar {
+  background-color: #FCFCFC;
+  border-top: solid 1px #CCCCCC;
+  border-bottom: solid 1px #CCCCCC;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+//maps to the cta bar class buttons in the cta-bar
+.cta-buttons {
+  margin-top: 15px;
 }
 
 // secondary nav variables

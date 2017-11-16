@@ -6,7 +6,6 @@ $clients-preview-margin-bottom: 20px;
 $clients-preview-padding-top: 20px;
 $clients-preview-padding-bottom: 20px;
 $clients-preview-bg-color: #FFFFFF;
-$clients-preview-border-bottom: solid 1px #CCCCCC;
 
 // section heading variables
 $section-heading-margin-top: 20px;
@@ -20,6 +19,5 @@ $section-heading-padding-bottom: 20px;
   margin-bottom: $clients-preview-margin-bottom;
   padding-top: $clients-preview-padding-top;
   padding-bottom: $clients-preview-padding-bottom;
-  border-bottom: $clients-preview-border-bottom;
   background-color: $clients-preview-bg-color;
 }

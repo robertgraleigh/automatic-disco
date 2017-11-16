@@ -54,7 +54,7 @@
           test: /\.(png|jpg|jpeg|gif)/,
           use: [
             {
-              loader: 'file-loader',
+              loader: "file-loader",
               options: {
                 name: "img/[name].[ext]",
               }

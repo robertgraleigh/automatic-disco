@@ -30,10 +30,6 @@ $section-cta-font-weight: bold;
 $section-cta-text-transform: uppercase;
 $section-cta-color: #666666;
 
-// maps to the default section element
-$cta-bar-border-top: solid 1px #CCCCCC;
-$cta-bar-border-bottom: solid 1px #CCCCCC;
-
 html {
   background-color: $body-background-color;
 }
@@ -80,20 +76,4 @@ p {
   text-transform: $section-cta-text-transform;
   color: $section-cta-color;
   padding-top: 10px;
-}
-
-.cta-border {
-  border-top: solid 5px #0075BD;
-}
-
-.cta-bar {
-  background-color: #FCFCFC;
-  border-top: $cta-bar-border-top;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: $cta-bar-border-bottom;
-}
-
-.cta-buttons {
-  margin-top: 15px;
 }

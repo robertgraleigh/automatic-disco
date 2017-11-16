@@ -1,0 +1,10 @@
+// products-preview.scss
+$products-preview-margin-top: 60px;
+$products-preview-margin-bottom: 60px;
+
+.products-preview {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: $products-preview-margin-top;
+  padding-bottom: $products-preview-margin-bottom;
+}
