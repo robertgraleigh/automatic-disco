@@ -471,10 +471,6 @@ nav {
   background-color: #FFFFFF;
   color: #ff9900; }
 
-section {
-  border-top: none;
-  border-bottom: solid 1px #cccccc; }
-
 p {
   font-family: "Georgia", "Times New Roman", serif;
   font-size: 14px;
@@ -500,10 +496,20 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   color: #666666;
-  padding-top: 20px; }
+  padding-top: 10px; }
 
 .cta-border {
   border-top: solid 5px #0075BD; }
+
+.cta-bar {
+  background-color: #FCFCFC;
+  border-top: solid 1px #CCCCCC;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #CCCCCC; }
+
+.cta-buttons {
+  margin-top: 15px; }
 
 .contact-menu {
   background-color: #333333;
@@ -580,7 +586,7 @@ p {
   margin-bottom: 0px;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-color: #0075BD;
+  background-color: #0075BD !important;
   color: #FFFFFF; }
 
 .hero-heading {
@@ -620,9 +626,9 @@ p {
   color: #FFFFFF; }
 
 .pm-preview {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 40px;
   padding-bottom: 20px;
   border-bottom: solid 1px #CCCCCC;
   background-color: #FFFFFF; }
@@ -719,10 +725,10 @@ p {
   padding-top: 20px; }
 
 .projects-preview {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-bottom: none;
   background-color: #FFFFFF; }
 
@@ -788,7 +794,7 @@ p {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: none;
-  background-color: #FCFCFC !important; }
+  background-color: #FFFFFF !important; }
 
 .section-heading {
   font-size: 54px;

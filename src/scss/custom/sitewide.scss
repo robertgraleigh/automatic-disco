@@ -9,10 +9,6 @@ $body-background-image: none;
 $nav-bg-color: #FFFFFF;
 $nav-link-color: #ff9900;
 
-// section variables
-$section-border-top: none;
-$section-border-bottom: solid 1px #cccccc;
-
 // section heading variables
 $section-heading-font: "Merriweather Sans", sans-serif;
 $section-heading-font-size: 54px;
@@ -34,6 +30,10 @@ $section-cta-font-weight: bold;
 $section-cta-text-transform: uppercase;
 $section-cta-color: #666666;
 
+// maps to the default section element
+$cta-bar-border-top: solid 1px #CCCCCC;
+$cta-bar-border-bottom: solid 1px #CCCCCC;
+
 html {
   background-color: $body-background-color;
 }
@@ -46,12 +46,6 @@ body {
 nav {
   background-color: $nav-bg-color;
   color: $nav-link-color;
-}
-
-// maps to the default section element
-section {
-  border-top: $section-border-top;
-  border-bottom: $section-border-bottom;
 }
 
 // maps to the default paragraph tag
@@ -85,9 +79,21 @@ p {
   font-weight: $section-cta-font-weight;
   text-transform: $section-cta-text-transform;
   color: $section-cta-color;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .cta-border {
   border-top: solid 5px #0075BD;
+}
+
+.cta-bar {
+  background-color: #FCFCFC;
+  border-top: $cta-bar-border-top;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: $cta-bar-border-bottom;
+}
+
+.cta-buttons {
+  margin-top: 15px;
 }
