@@ -9,26 +9,8 @@ $body-background-image: none;
 $nav-bg-color: #FFFFFF;
 $nav-link-color: #ff9900;
 
-// section heading variables
-$section-heading-font: "Merriweather Sans", sans-serif;
-$section-heading-font-size: 54px;
-$section-heading-font-weight: bold;
-$section-heading-text-transform: capitalize;
-$section-heading-color: darken($dark-gray,30%) !important;
-
-// section description variables
-$section-description-font: "Georgia", "Times New Roman", serif;
-$section-description-font-size: 21px;
-$section-description-font-weight: bold;
-$section-description-text-transform: capitalize;
-$section-description-color: #666666;
-
-//section call-to-action variables
-$section-cta-font: "Merriweather Sans", sans-serif;
-$section-cta-font-size: 24px;
-$section-cta-font-weight: bold;
-$section-cta-text-transform: uppercase;
-$section-cta-color: #666666;
+// reveal custom top border
+$reveal-border-top: solid 5px #005ACF !important;
 
 html {
   background-color: $body-background-color;
@@ -51,29 +33,38 @@ p {
   font-weight: 400;
 }
 
-// maps to the section heading class of the custom sections
-.section-heading {
-  font-family: $section-heading-font;
-  font-size: $section-heading-font-size;
-  font-weight: $section-heading-font-weight;
-  text-transform: $section-heading-text-transform;
-  color: $section-heading-color;
+// maps to the custom skillset heading
+.skillset-heading {
+  font-family: "Merriweather Sans", sans-serif;;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-// maps to the section description class of the custom sections
-.section-description {
-  font-family: $section-description-font;
-  font-size: $section-description-font-size;
-  font-weight: $section-description-font-weight;
-  text-transform: $section-description-text-transform;
-  color: $section-description-color;
+// maps to the custom skillset description
+.skillset-description {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.section-cta {
-  font-family: $section-cta-font;
-  font-size: $section-cta-font-size;
-  font-weight: $section-cta-font-weight;
-  text-transform: $section-cta-text-transform;
-  color: $section-cta-color;
-  padding-top: 10px;
+// maps to the custom skillset icon
+.skillset-icon {
+  font-size: 54px;
+  color: #0057BD;
+}
+
+// maps to the default reveal sections
+.reveal {
+  border-top: $reveal-border-top;
+}
+
+// maps to the default reveal section
+.large .reveal {
+  border-top: $reveal-border-top;
+}
+
+// maps to the default reveal overlay
+.reveal-overlay {
+  background-color: #FCFCFC !important;
 }

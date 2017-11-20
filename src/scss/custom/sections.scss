@@ -1,0 +1,97 @@
+// sections.scss
+
+// section heading variables
+$section-heading-font: "Merriweather Sans", sans-serif;
+$section-heading-font-size: 54px;
+$section-heading-font-weight: bold;
+$section-heading-text-transform: capitalize;
+$section-heading-color: darken($dark-gray,30%) !important;
+$section-margin-top: 0px;
+$section-margin-bottom: 0px;
+$section-padding-top: 60px;
+$section-padding-bottom: 60px;
+
+// section description variables
+$section-description-font: "Georgia", "Times New Roman", serif;
+$section-description-font-size: 18px;
+$section-description-font-weight: bold;
+$section-description-text-transform: capitalize;
+$section-description-color: #666666;
+$section-description-margin-top: 0px;
+$section-description-margin-bottom: 60px;
+$section-description-padding-top: 0px;
+$section-description-padding-bottom: 10px !important;
+
+// section call-to-action variables
+$section-cta-font: "Merriweather Sans", sans-serif;
+$section-cta-font-size: 24px;
+$section-cta-font-weight: bold;
+$section-cta-text-transform: uppercase;
+$section-cta-color: #666666;
+
+// maps to the section heading class of the custom sections
+.section-heading {
+  font-family: $section-heading-font;
+  font-size: $section-heading-font-size;
+  font-weight: $section-heading-font-weight;
+  text-transform: $section-heading-text-transform;
+  color: $section-heading-color;
+}
+
+// maps to the section description class of the custom sections
+.section-description {
+  font-family: $section-description-font;
+  font-size: $section-description-font-size;
+  font-weight: $section-description-font-weight;
+  text-transform: $section-description-text-transform;
+  margin-top: $section-description-margin-top;
+  margin-bottom: $section-description-margin-bottom;
+  padding-top: $section-description-padding-top;
+  padding-bottom: $section-description-padding-bottom;
+  color: $section-description-color;
+}
+
+.section-cta {
+  font-family: $section-cta-font;
+  font-size: $section-cta-font-size;
+  font-weight: $section-cta-font-weight;
+  text-transform: $section-cta-text-transform;
+  color: $section-cta-color;
+  padding-top: 10px;
+}
+
+.about-preview {
+  margin-top: $section-margin-top;
+  margin-bottom: $section-margin-bottom;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+}
+
+.about-preview img {
+  margin-top: 10px;
+}
+
+.about-preview .section-description {
+  margin-bottom: 10px;
+}
+
+.products-preview {
+  margin-top: $section-margin-top;
+  margin-bottom: $section-margin-bottom;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+}
+
+.services-preview {
+  margin-top: $section-margin-top;
+  margin-bottom: $section-margin-bottom;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+}
+
+.pm-preview {
+  margin-top: $section-margin-top;
+  margin-bottom: $section-margin-bottom;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+}

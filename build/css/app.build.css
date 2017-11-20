@@ -476,6 +476,30 @@ p {
   font-size: 14px;
   font-weight: 400; }
 
+.skillset-heading {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.skillset-description {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+.skillset-icon {
+  font-size: 54px;
+  color: #0057BD; }
+
+.reveal {
+  border-top: solid 5px #005ACF !important; }
+
+.large .reveal {
+  border-top: solid 5px #005ACF !important; }
+
+.reveal-overlay {
+  background-color: #FCFCFC !important; }
+
 .section-heading {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 54px;
@@ -485,9 +509,13 @@ p {
 
 .section-description {
   font-family: "Georgia", "Times New Roman", serif;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: capitalize;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  padding-top: 0px;
+  padding-bottom: 10px !important;
   color: #666666; }
 
 .section-cta {
@@ -497,6 +525,36 @@ p {
   text-transform: uppercase;
   color: #666666;
   padding-top: 10px; }
+
+.about-preview {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.about-preview img {
+  margin-top: 10px; }
+
+.about-preview .section-description {
+  margin-bottom: 10px; }
+
+.products-preview {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.services-preview {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.pm-preview {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
 
 .contact-menu {
   background-color: #333333;
@@ -524,7 +582,7 @@ p {
   padding-top: 40px;
   padding-bottom: 40px;
   border-top: none;
-  border-bottom: solid 5px #333333; }
+  border-bottom: none; }
 
 .top-bar {
   margin-top: 0px;
@@ -604,74 +662,6 @@ p {
   font-weight: 400;
   color: #FFFFFF; }
 
-.about-preview {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #FFFFFF; }
-
-.section-heading {
-  font-family: "Merriweather Sans", "Arial", sans-serif;
-  font-weight: 800;
-  color: #FFFFFF; }
-
-.section-subheading {
-  font-family: "Merriweather Sans", "Arial", sans-serif;
-  font-weight: 800;
-  color: #FFFFFF; }
-
-.products-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.services-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.pm-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  background-color: #FFFFFF; }
-
-.pm-preview h2, h3, h4 {
-  text-transform: none; }
-
-.fe-dev-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #FFFFFF; }
-
-.skillset-heading {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.skillset-description {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 14px;
-  font-weight: 400; }
-
-.skillset-icon {
-  font-size: 36px;
-  color: #0057BD; }
-
-.clients-preview {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #FFFFFF; }
-
 .client-card {
   background-color: #fefefe;
   border-top: solid 5px #0066cc;
@@ -729,14 +719,6 @@ p {
 .client-card-button {
   padding-top: 20px; }
 
-.projects-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: none;
-  background-color: #FFFFFF; }
-
 .project-card {
   background-color: #FFFFFF !important;
   border-top: solid 5px #0070C0;
@@ -792,24 +774,6 @@ p {
 
 .project-card-button {
   padding-top: 20px; }
-
-.get-started-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: none;
-  background-color: #FFFFFF !important; }
-
-.section-heading {
-  font-size: 54px;
-  padding-bottom: 0px; }
-
-.section-description {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 29px;
-  text-transform: none;
-  padding-bottom: 40px; }
 
 .footer {
   background-color: #222222;
