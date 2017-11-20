@@ -78,7 +78,12 @@
       new HtmlWebpackPlugin({
         title: 'About',
         filename: 'about.html',
-        template: "src/about.html"
+        template: 'src/about.html'
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Cart',
+        filename: 'cart.html',
+        template: 'src/cart.html'
       }),
       new CopyWebpackPlugin([
         {
