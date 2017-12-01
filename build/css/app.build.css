@@ -578,6 +578,14 @@ p {
   padding-top: 60px;
   padding-bottom: 60px; }
 
+.blog-preview {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #0066CC;
+  color: #CCCCCC; }
+
 .contact-menu {
   background-color: #333333;
   background-image: none;

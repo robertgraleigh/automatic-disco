@@ -39,6 +39,14 @@ $cta-bar-color: #666666;
 $cta-bar-padding-top: 20px;
 $cta-bar-padding-bottom: 20px;
 
+//blog preview section variables
+$blog-preview-margin-top: 0px;
+$blog-preview-margin-bottom: 0px;
+$blog-preview-padding-top: 40px;
+$blog-preview-padding-bottom: 40px;
+$blog-preview-bg-color: #0066CC;
+$blog-preview-color: #CCCCCC;
+
 // maps to the section heading class of the custom sections
 .section-heading {
   font-family: $section-heading-font;
@@ -131,4 +139,13 @@ $cta-bar-padding-bottom: 20px;
   margin-bottom: $section-margin-bottom;
   padding-top: $section-padding-top;
   padding-bottom: $section-padding-bottom;
+}
+
+.blog-preview {
+  margin-top: $blog-preview-margin-top;
+  margin-bottom: $blog-preview-margin-bottom;
+  padding-top: $blog-preview-padding-top;
+  padding-bottom: $blog-preview-padding-bottom;
+  background-color: $blog-preview-bg-color;
+  color: $blog-preview-color;
 }
