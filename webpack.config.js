@@ -81,6 +81,16 @@
         template: 'src/about.html'
       }),
       new HtmlWebpackPlugin({
+        title: 'Clients',
+        filename: 'clients.html',
+        template: 'src/clients.html'
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Projects',
+        filename: 'projects.html',
+        template: 'src/projects.html'
+      }),
+      new HtmlWebpackPlugin({
         title: 'Cart',
         filename: 'cart.html',
         template: 'src/cart.html'

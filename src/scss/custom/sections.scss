@@ -29,6 +29,16 @@ $section-cta-font-weight: bold;
 $section-cta-text-transform: uppercase;
 $section-cta-color: #666666;
 
+// cta-bar section variables
+$cta-bar-font: "Merriweather Sans", sans-serif;
+$cta-bar-font-size: 24px;
+$cta-bar-font-weight: bold;
+$cta-bar-text-transform: uppercase;
+$cta-bar-bg-color: #222222;
+$cta-bar-color: #666666;
+$cta-bar-padding-top: 20px;
+$cta-bar-padding-bottom: 20px;
+
 // maps to the section heading class of the custom sections
 .section-heading {
   font-family: $section-heading-font;
@@ -58,6 +68,17 @@ $section-cta-color: #666666;
   text-transform: $section-cta-text-transform;
   color: $section-cta-color;
   padding-top: 10px;
+}
+
+.cta-bar {
+  font-family: $cta-bar-font;
+  font-size: $cta-bar-font;
+  font-weight: $cta-bar-font;
+  text-transform: $cta-bar-font;
+  background-color: $cta-bar-bg-color;
+  color: $cta-bar-color;
+  padding-top: $cta-bar-padding-top;
+  padding-bottom: $cta-bar-padding-bottom;
 }
 
 .about-preview {
@@ -90,6 +111,22 @@ $section-cta-color: #666666;
 }
 
 .pm-preview {
+  margin-top: $section-margin-top;
+  margin-bottom: $section-margin-bottom;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+}
+
+// custom client preview section on the index page
+.clients-preview {
+  margin-top: $section-margin-top;
+  margin-bottom: $section-margin-bottom;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+}
+
+// custom project preview section on the index page
+.projects-preview {
   margin-top: $section-margin-top;
   margin-bottom: $section-margin-bottom;
   padding-top: $section-padding-top;
