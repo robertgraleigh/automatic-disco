@@ -1,19 +1,19 @@
 // sections.scss
 
 // section heading variables
-$section-heading-font: "Merriweather Sans", sans-serif;
-$section-heading-font-size: 54px;
+$section-heading-font: "Bebas Neue", "Din Condensed Bold", "Arial", sans-serif;
+$section-heading-font-size: 60px;
 $section-heading-font-weight: bold;
 $section-heading-text-transform: capitalize;
-$section-heading-color: darken($dark-gray,30%) !important;
+$section-heading-color: #222222;
 $section-margin-top: 0px;
 $section-margin-bottom: 0px;
 $section-padding-top: 60px;
 $section-padding-bottom: 60px;
 
 // section description variables
-$section-description-font: "Georgia", "Times New Roman", serif;
-$section-description-font-size: 18px;
+$section-description-font: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+$section-description-font-size: 30px;
 $section-description-font-weight: bold;
 $section-description-text-transform: capitalize;
 $section-description-color: #666666;
@@ -23,7 +23,7 @@ $section-description-padding-top: 0px;
 $section-description-padding-bottom: 10px !important;
 
 // section call-to-action variables
-$section-cta-font: "Merriweather Sans", sans-serif;
+$section-cta-font: "Bebas Neue", sans-serif;
 $section-cta-font-size: 24px;
 $section-cta-font-weight: bold;
 $section-cta-text-transform: uppercase;
@@ -148,4 +148,98 @@ $blog-preview-color: #CCCCCC;
   padding-bottom: $blog-preview-padding-bottom;
   background-color: $blog-preview-bg-color;
   color: $blog-preview-color;
+}
+
+.about-hero {
+  background-color: #444444;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-hero h1 {
+  font-family: "Bebas Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.about-profile {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about-values {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #666666;
+}
+
+.about-employment {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #666666;
+}
+
+.employer-card {
+  padding: 20px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.about-education {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #777777;
+}
+
+.about-education .card {
+  background-color: inherit;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.about-contact-info {
+  background-color: #CCCC00;
+  color: #333333;
+}
+
+.about-contact-info h1, h2, h3 {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: #222222;
+}
+
+.about-contact-info h1 {
+  font-family: 36px;
+}
+
+.about-contact-info h2 {
+  font-family: 36px;
+}
+
+.about-contact-info h3 {
+  font-family: 36px;
+}
+
+.about-contact-info a {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: #333333;
+}
+
+.about-training-workshops {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about-training-workshops .card {
+  background-color: inherit;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 2px;
 }

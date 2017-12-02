@@ -1,0 +1,56 @@
+// banners.scss
+
+$about-top-banner-bg-img: url("http://www.fillmurray.com/g/1200/600");
+$about-middle-banner-bg-img: url("http://www.fillmurray.com/g/1200/600");
+$about-banner-bottom-bg-img: url("http://www.fillmurray.com/g/1200/600");
+
+
+.banner-quote {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #666666;
+}
+
+.banner-quote .card {
+  background-color: inherit;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+.banner-quote h1 {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #FCFCFC;
+}
+
+.banner-quote h2 {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #FCFCFC;
+}
+
+.banner-quote h3 {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #FCFCFC;
+}
+
+.banner-quote p {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 18px;
+  color: #FCFCFC;
+}
+
+.banner-quote span {
+  color: #FCFCFC;
+}
+
+.banner-quote-icon {
+  font-size: 24px;
+}

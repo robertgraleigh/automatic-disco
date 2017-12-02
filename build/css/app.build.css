@@ -472,9 +472,9 @@ nav {
   color: #ff9900; }
 
 p {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 14px;
-  font-weight: 400; }
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal; }
 
 .skillset-heading {
   font-family: "Merriweather Sans", sans-serif;
@@ -501,15 +501,15 @@ p {
   background-color: #FCFCFC !important; }
 
 .section-heading {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: 54px;
+  font-family: "Bebas Neue", "Din Condensed Bold", "Arial", sans-serif;
+  font-size: 60px;
   font-weight: bold;
   text-transform: capitalize;
-  color: black !important; }
+  color: #222222; }
 
 .section-description {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 18px;
+  font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+  font-size: 30px;
   font-weight: bold;
   text-transform: capitalize;
   margin-top: 0px;
@@ -519,7 +519,7 @@ p {
   color: #666666; }
 
 .section-cta {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -586,6 +586,84 @@ p {
   background-color: #0066CC;
   color: #CCCCCC; }
 
+.about-hero {
+  background-color: #444444;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.about-hero h1 {
+  font-family: "Bebas Neue", "Helvetica", "Arial", sans-serif; }
+
+.about-profile {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.about-values {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #666666; }
+
+.about-employment {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #666666; }
+
+.employer-card {
+  padding: 20px;
+  border-radius: 5px 5px 5px 5px; }
+
+.about-education {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #777777; }
+
+.about-education .card {
+  background-color: inherit;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 2px; }
+
+.about-contact-info {
+  background-color: #CCCC00;
+  color: #333333; }
+
+.about-contact-info h1, h2, h3 {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: #222222; }
+
+.about-contact-info h1 {
+  font-family: 36px; }
+
+.about-contact-info h2 {
+  font-family: 36px; }
+
+.about-contact-info h3 {
+  font-family: 36px; }
+
+.about-contact-info a {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  color: #333333; }
+
+.about-training-workshops {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.about-training-workshops .card {
+  background-color: inherit;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 2px; }
+
 .contact-menu {
   background-color: #333333;
   background-image: none;
@@ -597,11 +675,17 @@ p {
   border-top: none;
   border-bottom: none; }
 
-.contact-menu ul li a {
-  font-size: 14px; }
+.contact-menu ul li {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  padding-right: 10px;
+  font-size: 16px; }
 
 .contact-menu span {
-  font-size: 14px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  color: #999999;
+  font-size: 21px;
   text-transform: uppercase; }
 
 .primary-nav {
@@ -609,16 +693,19 @@ p {
   background-image: none;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-top: none;
   border-bottom: none; }
+
+.primary nav ul li a {
+  text-transform: uppercase; }
 
 .top-bar {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #FFFFFF !important;
   border-top: solid 1px #333333;
   border-bottom: solid 1px #333333; }
@@ -626,14 +713,26 @@ p {
 .top-bar ul {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: #FFFFFF !important; }
 
-.top-bar ul li a {
+.top-bar-left ul li a {
+  font-family: "Merriweather", "Merriweather Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize; }
+
+.top-bar-left ul li a:hover {
   font-weight: bold; }
 
-.top-bar ul li a:hover {
+.top-bar-right ul li a {
+  font-family: "OSP-DIN", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-transorm: uppercase; }
+
+.top-bar-left ul li a:hover {
   font-weight: bold; }
 
 .cta-bar {
@@ -675,7 +774,7 @@ p {
   color: #FFFFFF; }
 
 .hero-heading {
-  font-family: "Merriweather Sans", "Arial", sans-serif;
+  font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   margin-top: 0px;
@@ -691,6 +790,48 @@ p {
   font-family: "Georgia", "Times New Roman", sans-serif;
   font-weight: 400;
   color: #FFFFFF; }
+
+.banner-quote {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #666666; }
+
+.banner-quote .card {
+  background-color: inherit;
+  padding: 15px;
+  border-radius: 5px;
+  border-width: 2px; }
+
+.banner-quote h1 {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #FCFCFC; }
+
+.banner-quote h2 {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #FCFCFC; }
+
+.banner-quote h3 {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #FCFCFC; }
+
+.banner-quote p {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 18px;
+  color: #FCFCFC; }
+
+.banner-quote span {
+  color: #FCFCFC; }
+
+.banner-quote-icon {
+  font-size: 24px; }
 
 .client-card {
   background-color: #FCFCFC;
