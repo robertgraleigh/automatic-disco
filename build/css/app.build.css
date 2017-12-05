@@ -518,20 +518,12 @@ p {
   padding-bottom: 10px !important;
   color: #666666; }
 
-.section-cta {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #666666;
-  padding-top: 10px; }
-
 .cta-bar {
   font-family: "Merriweather Sans", sans-serif;
   font-size: "Merriweather Sans", sans-serif;
   font-weight: "Merriweather Sans", sans-serif;
   text-transform: "Merriweather Sans", sans-serif;
-  background-color: #222222;
+  background-color: #FFFFFF !important;
   color: #666666;
   padding-top: 20px;
   padding-bottom: 20px; }

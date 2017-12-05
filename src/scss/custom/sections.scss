@@ -34,7 +34,7 @@ $cta-bar-font: "Merriweather Sans", sans-serif;
 $cta-bar-font-size: 24px;
 $cta-bar-font-weight: bold;
 $cta-bar-text-transform: uppercase;
-$cta-bar-bg-color: #222222;
+$cta-bar-bg-color: #FFFFFF !important;
 $cta-bar-color: #666666;
 $cta-bar-padding-top: 20px;
 $cta-bar-padding-bottom: 20px;
@@ -67,15 +67,6 @@ $blog-preview-color: #CCCCCC;
   padding-top: $section-description-padding-top;
   padding-bottom: $section-description-padding-bottom;
   color: $section-description-color;
-}
-
-.section-cta {
-  font-family: $section-cta-font;
-  font-size: $section-cta-font-size;
-  font-weight: $section-cta-font-weight;
-  text-transform: $section-cta-text-transform;
-  color: $section-cta-color;
-  padding-top: 10px;
 }
 
 .cta-bar {
