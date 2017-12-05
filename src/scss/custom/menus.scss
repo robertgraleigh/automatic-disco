@@ -3,7 +3,7 @@
 // contact menu variables
 $contact-bg-color: #333333;
 $contact-bg-image: none;
-$contact-font-family: "Bebas Neue", sans-serif;
+$contact-font-family: "OSP-DIN", "Arial", sans-serif;
 $contact-font-weight: normal;
 $contact-link-color: #FFFFFF;
 $contact-text-transform: uppercase;
@@ -65,11 +65,11 @@ $footer-nav-border-bottom: solid 5px #333333;
   border-bottom: $contact-border-bottom;
 }
 
-.contact-menu ul li  {
+.contact-menu ul li {
   font-family: $contact-font-family;
   font-weight: $contact-font-weight;
   padding-right: 10px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .contact-menu span {

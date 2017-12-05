@@ -668,13 +668,13 @@ p {
   border-bottom: none; }
 
 .contact-menu ul li {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "OSP-DIN", "Arial", sans-serif;
   font-weight: normal;
   padding-right: 10px;
-  font-size: 16px; }
+  font-size: 15px; }
 
 .contact-menu span {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "OSP-DIN", "Arial", sans-serif;
   font-weight: normal;
   color: #999999;
   font-size: 21px;
