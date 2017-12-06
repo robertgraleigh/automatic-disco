@@ -41,6 +41,13 @@ $ctaColor: #999999;
   border-left: $borderLeft;
 }
 
+section {
+  & p {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 14px;
+  }
+}
+
 // positioning classes for custom sections
 .section {
   @include section-margin;

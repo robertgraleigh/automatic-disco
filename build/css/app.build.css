@@ -500,6 +500,10 @@ p {
 .reveal-overlay {
   background-color: #FCFCFC !important; }
 
+section p {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 14px; }
+
 .section {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -559,27 +563,18 @@ p {
 
 .contact-menu {
   background-color: #333333;
-  background-image: none;
-  color: #FFFFFF;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: none;
-  border-bottom: none; }
-
-.contact-menu ul li {
-  font-family: "OSP-DIN", "Arial", sans-serif;
-  font-weight: normal;
-  padding-right: 10px;
-  font-size: 15px; }
-
-.contact-menu span {
-  font-family: "OSP-DIN", "Arial", sans-serif;
-  font-weight: normal;
-  color: #999999;
-  font-size: 21px;
-  text-transform: uppercase; }
+  color: #FFFFFF; }
+  .contact-menu ul li {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    padding-right: 5px;
+    font-size: 16px; }
+  .contact-menu span {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase; }
 
 .primary-nav {
   background-color: #FFFFFF !important;
@@ -591,9 +586,6 @@ p {
   border-top: none;
   border-bottom: none; }
 
-.primary nav ul li a {
-  text-transform: uppercase; }
-
 .top-bar {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -602,16 +594,15 @@ p {
   background-color: #FFFFFF !important;
   border-top: solid 1px #333333;
   border-bottom: solid 1px #333333; }
-
-.top-bar ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #FFFFFF !important; }
+  .top-bar ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #FFFFFF !important; }
 
 .top-bar-left ul li a {
-  font-family: "Merriweather", "Merriweather Sans", sans-serif;
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-transform: capitalize; }
@@ -625,7 +616,7 @@ p {
   font-weight: bold;
   text-transorm: uppercase; }
 
-.top-bar-left ul li a:hover {
+.top-bar-right ul li a:hover {
   font-weight: bold; }
 
 .cta-bar {

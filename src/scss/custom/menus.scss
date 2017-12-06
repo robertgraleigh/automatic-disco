@@ -1,18 +1,14 @@
 // menus.scss
 
 // contact menu variables
-$contact-bg-color: #333333;
-$contact-bg-image: none;
-$contact-font-family: "OSP-DIN", "Arial", sans-serif;
-$contact-font-weight: normal;
-$contact-link-color: #FFFFFF;
-$contact-text-transform: uppercase;
-$contact-margin-top: 0px;
-$contact-margin-bottom: 0px;
-$contact-padding-top: 10px;
-$contact-padding-bottom: 10px;
-$contact-border-top: none;
-$contact-border-bottom: none;
+$contactBgColor: #333333;
+$contactFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+$contactFontSize: 16px;
+$contactFontWeight: normal;
+$contactColor: #FFFFFF;
+$contactTextTransform: uppercase;
+$contactBorderTop: none;
+$contactBorderBottom: none;
 
 // primary nav variables
 $primary-nav-bg-color: #FFFFFF !important;
@@ -54,30 +50,21 @@ $footer-nav-border-bottom: solid 5px #333333;
 
 // contact menu
 .contact-menu {
-  background-color: $contact-bg-color;
-  background-image: $contact-bg-image;
-  color: $contact-link-color;
-  margin-top: $contact-margin-top;
-  margin-bottom: $contact-margin-bottom;
-  padding-top: $contact-padding-top;
-  padding-bottom: $contact-padding-bottom;
-  border-top: $contact-border-top;
-  border-bottom: $contact-border-bottom;
-}
-
-.contact-menu ul li {
-  font-family: $contact-font-family;
-  font-weight: $contact-font-weight;
-  padding-right: 10px;
-  font-size: 15px;
-}
-
-.contact-menu span {
-  font-family: $contact-font-family;
-  font-weight: $contact-font-weight;
-  color: #999999;
-  font-size: 21px;
-  text-transform: $contact-text-transform;
+  background-color: $contactBgColor;
+  color: $contactColor;
+  & ul li {
+    font-family: $contactFontFamily;
+    font-weight: $contactFontWeight;
+    padding-right: 5px;
+    font-size: 16px;
+  }
+  & span {
+    font-family: $contactFontFamily;
+    font-weight: $contactFontWeight;
+    color: $contactColor;
+    font-size: $contactFontSize;
+    text-transform: $contactTextTransform;
+  }
 }
 
 // primary nav
@@ -92,11 +79,6 @@ $footer-nav-border-bottom: solid 5px #333333;
   border-bottom: $primary-nav-border-bottom;
 }
 
-.primary nav ul li a {
-
-  text-transform: uppercase;
-}
-
 .top-bar {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -105,39 +87,42 @@ $footer-nav-border-bottom: solid 5px #333333;
   background-color: #FFFFFF !important;
   border-top: solid 1px #333333;
   border-bottom: solid 1px #333333;
+  & ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #FFFFFF !important;
+  }
 }
 
-.top-bar ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #FFFFFF !important;
+// maps to the customized top bar left class
+.top-bar-left {
+  & ul li a {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: $primary-nav-link-weight;
+    text-transform: capitalize;
+  }
+  & ul li a:hover {
+    font-weight: $primary-nav-link-weight;
+  }
 }
 
-.top-bar-left ul li a {
-  font-family: "Merriweather", "Merriweather Sans", sans-serif;
-  font-size: 16px;
-  font-weight: $primary-nav-link-weight;
-  text-transform: capitalize;
+// maps to the customized top bar right class
+.top-bar-right {
+  & ul li a {
+    font-family: "OSP-DIN", "Arial", sans-serif;
+    font-size: 21px;
+    font-weight: $primary-nav-link-weight;
+    text-transorm: uppercase;
+  }
+  & ul li a:hover {
+    font-weight: $primary-nav-link-weight;
+  }
 }
 
-.top-bar-left ul li a:hover {
-  font-weight: $primary-nav-link-weight;
-}
-
-.top-bar-right ul li a {
-  font-family: "OSP-DIN", "Arial", sans-serif;
-  font-size: 21px;
-  font-weight: $primary-nav-link-weight;
-  text-transorm: uppercase;
-}
-
-.top-bar-left ul li a:hover {
-  font-weight: $primary-nav-link-weight;
-}
-
-// maps to the cta bar class in-between sections
+// maps to the custom cta bar class
 .cta-bar {
   background-color: #FCFCFC;
   border-top: solid 1px #CCCCCC;
