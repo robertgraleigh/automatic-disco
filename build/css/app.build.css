@@ -500,161 +500,62 @@ p {
 .reveal-overlay {
   background-color: #FCFCFC !important; }
 
+.section {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.section-xs {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.section-sm {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.section-md {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.section-lg {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.section-xl {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
 .section-heading {
-  font-family: "Bebas Neue", "Din Condensed Bold", "Arial", sans-serif;
-  font-size: 60px;
+  font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+  font-size: 54px;
   font-weight: bold;
-  text-transform: capitalize;
-  color: #222222; }
+  text-transform: uppercase;
+  color: #333333; }
 
 .section-description {
   font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: capitalize;
-  margin-top: 0px;
-  margin-bottom: 60px;
-  padding-top: 0px;
-  padding-bottom: 10px !important;
-  color: #666666; }
+  color: #999999; }
 
 .cta-bar {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: "Merriweather Sans", sans-serif;
-  font-weight: "Merriweather Sans", sans-serif;
-  text-transform: "Merriweather Sans", sans-serif;
-  background-color: #FFFFFF !important;
-  color: #666666;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-.about-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.about-preview img {
-  margin-top: 10px; }
-
-.about-preview .section-description {
-  margin-bottom: 10px; }
-
-.products-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.services-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.pm-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.clients-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.projects-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.blog-preview {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #0066CC;
-  color: #CCCCCC; }
-
-.about-hero {
-  background-color: #444444;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-.about-hero h1 {
-  font-family: "Bebas Neue", "Helvetica", "Arial", sans-serif; }
-
-.about-profile {
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.about-values {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #666666; }
-
-.about-employment {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #666666; }
-
-.employer-card {
-  padding: 20px;
-  border-radius: 5px 5px 5px 5px; }
-
-.about-education {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #777777; }
-
-.about-education .card {
-  background-color: inherit;
-  padding: 15px;
-  border-radius: 5px;
-  border-width: 2px; }
-
-.about-contact-info {
-  background-color: #CCCC00;
-  color: #333333; }
-
-.about-contact-info h1, h2, h3 {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+  font-size: 21px;
   font-weight: bold;
-  color: #222222; }
-
-.about-contact-info h1 {
-  font-family: 36px; }
-
-.about-contact-info h2 {
-  font-family: 36px; }
-
-.about-contact-info h3 {
-  font-family: 36px; }
-
-.about-contact-info a {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-weight: bold;
-  color: #333333; }
-
-.about-training-workshops {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
-
-.about-training-workshops .card {
-  background-color: inherit;
-  padding: 15px;
-  border-radius: 5px;
-  border-width: 2px; }
+  text-transform: capitalize;
+  color: #999999; }
 
 .contact-menu {
   background-color: #333333;

@@ -1,236 +1,100 @@
 // sections.scss
 
-// section heading variables
-$section-heading-font: "Bebas Neue", "Din Condensed Bold", "Arial", sans-serif;
-$section-heading-font-size: 60px;
-$section-heading-font-weight: bold;
-$section-heading-text-transform: capitalize;
-$section-heading-color: #222222;
-$section-margin-top: 0px;
-$section-margin-bottom: 0px;
-$section-padding-top: 60px;
-$section-padding-bottom: 60px;
+// custom section heading variables
+$headingFontFamily: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+$headingFontSize: 54px;
+$headingFontWeight: bold;
+$headingColor: #333333;
+$headingTextTransform: uppercase;
 
-// section description variables
-$section-description-font: "OSP-DIN", "Helvetica", "Arial", sans-serif;
-$section-description-font-size: 30px;
-$section-description-font-weight: bold;
-$section-description-text-transform: capitalize;
-$section-description-color: #666666;
-$section-description-margin-top: 0px;
-$section-description-margin-bottom: 60px;
-$section-description-padding-top: 0px;
-$section-description-padding-bottom: 10px !important;
+// custom section description variables
+$descriptionFontFamily: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+$descriptionFontSize: 24px;
+$descriptionFontWeight: bold;
+$descriptionTextTransform: capitalize;
+$descriptionColor: #999999;
 
-// section call-to-action variables
-$section-cta-font: "Bebas Neue", sans-serif;
-$section-cta-font-size: 24px;
-$section-cta-font-weight: bold;
-$section-cta-text-transform: uppercase;
-$section-cta-color: #666666;
+// custom cta bar variables
+$ctaFontFamily: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+$ctaFontSize: 21px;
+$ctaFontWeight: bold;
+$ctaTextTransform: capitalize;
+$ctaColor: #999999;
 
-// cta-bar section variables
-$cta-bar-font: "Merriweather Sans", sans-serif;
-$cta-bar-font-size: 24px;
-$cta-bar-font-weight: bold;
-$cta-bar-text-transform: uppercase;
-$cta-bar-bg-color: #FFFFFF !important;
-$cta-bar-color: #666666;
-$cta-bar-padding-top: 20px;
-$cta-bar-padding-bottom: 20px;
+// mixin for section margin
+@mixin section-margin($margin: 0px) {
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
 
-//blog preview section variables
-$blog-preview-margin-top: 0px;
-$blog-preview-margin-bottom: 0px;
-$blog-preview-padding-top: 40px;
-$blog-preview-padding-bottom: 40px;
-$blog-preview-bg-color: #0066CC;
-$blog-preview-color: #CCCCCC;
+// mixin for section padding
+@mixin section-padding($padding: 0px) {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
 
-// maps to the section heading class of the custom sections
+// mixin for section border
+@mixin section-border($borderTop: none, $borderRight: none, $borderBottom: none, $borderLeft: none) {
+  border-top: $borderTop;
+  border-right: $borderRight;
+  border-bottom: $borderBottom;
+  border-left: $borderLeft;
+}
+
+// positioning classes for custom sections
+.section {
+  @include section-margin;
+  @include section-padding;
+}
+
+.section-xs {
+  @include section-margin(0px);
+  @include section-padding(5px);
+}
+
+.section-sm {
+  @include section-margin(0px);
+  @include section-padding(10px);
+}
+
+.section-md {
+  @include section-margin(0px);
+  @include section-padding(20px);
+}
+
+.section-lg {
+  @include section-margin(0px);
+  @include section-padding(60px);
+}
+
+.section-xl {
+  @include section-margin(0px);
+  @include section-padding(60px);
+}
+
+// custom class for section heading
 .section-heading {
-  font-family: $section-heading-font;
-  font-size: $section-heading-font-size;
-  font-weight: $section-heading-font-weight;
-  text-transform: $section-heading-text-transform;
-  color: $section-heading-color;
+  font-family: $headingFontFamily;
+  font-size: $headingFontSize;
+  font-weight: $headingFontWeight;
+  text-transform: $headingTextTransform;
+  color: $headingColor;
 }
 
-// maps to the section description class of the custom sections
+// custom class for section description
 .section-description {
-  font-family: $section-description-font;
-  font-size: $section-description-font-size;
-  font-weight: $section-description-font-weight;
-  text-transform: $section-description-text-transform;
-  margin-top: $section-description-margin-top;
-  margin-bottom: $section-description-margin-bottom;
-  padding-top: $section-description-padding-top;
-  padding-bottom: $section-description-padding-bottom;
-  color: $section-description-color;
+  font-family: $descriptionFontFamily;
+  font-size: $descriptionFontSize;
+  font-weight: $descriptionFontWeight;
+  text-transform: $descriptionTextTransform;
+  color: $descriptionColor;
 }
 
+// custom class for cta bar
 .cta-bar {
-  font-family: $cta-bar-font;
-  font-size: $cta-bar-font;
-  font-weight: $cta-bar-font;
-  text-transform: $cta-bar-font;
-  background-color: $cta-bar-bg-color;
-  color: $cta-bar-color;
-  padding-top: $cta-bar-padding-top;
-  padding-bottom: $cta-bar-padding-bottom;
-}
-
-.about-preview {
-  margin-top: $section-margin-top;
-  margin-bottom: $section-margin-bottom;
-  padding-top: $section-padding-top;
-  padding-bottom: $section-padding-bottom;
-}
-
-.about-preview img {
-  margin-top: 10px;
-}
-
-.about-preview .section-description {
-  margin-bottom: 10px;
-}
-
-.products-preview {
-  margin-top: $section-margin-top;
-  margin-bottom: $section-margin-bottom;
-  padding-top: $section-padding-top;
-  padding-bottom: $section-padding-bottom;
-}
-
-.services-preview {
-  margin-top: $section-margin-top;
-  margin-bottom: $section-margin-bottom;
-  padding-top: $section-padding-top;
-  padding-bottom: $section-padding-bottom;
-}
-
-.pm-preview {
-  margin-top: $section-margin-top;
-  margin-bottom: $section-margin-bottom;
-  padding-top: $section-padding-top;
-  padding-bottom: $section-padding-bottom;
-}
-
-// custom client preview section on the index page
-.clients-preview {
-  margin-top: $section-margin-top;
-  margin-bottom: $section-margin-bottom;
-  padding-top: $section-padding-top;
-  padding-bottom: $section-padding-bottom;
-}
-
-// custom project preview section on the index page
-.projects-preview {
-  margin-top: $section-margin-top;
-  margin-bottom: $section-margin-bottom;
-  padding-top: $section-padding-top;
-  padding-bottom: $section-padding-bottom;
-}
-
-.blog-preview {
-  margin-top: $blog-preview-margin-top;
-  margin-bottom: $blog-preview-margin-bottom;
-  padding-top: $blog-preview-padding-top;
-  padding-bottom: $blog-preview-padding-bottom;
-  background-color: $blog-preview-bg-color;
-  color: $blog-preview-color;
-}
-
-.about-hero {
-  background-color: #444444;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.about-hero h1 {
-  font-family: "Bebas Neue", "Helvetica", "Arial", sans-serif;
-}
-
-.about-profile {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.about-values {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #666666;
-}
-
-.about-employment {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #666666;
-}
-
-.employer-card {
-  padding: 20px;
-  border-radius: 5px 5px 5px 5px;
-}
-
-.about-education {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #777777;
-}
-
-.about-education .card {
-  background-color: inherit;
-  padding: 15px;
-  border-radius: 5px;
-  border-width: 2px;
-}
-
-.about-contact-info {
-  background-color: #CCCC00;
-  color: #333333;
-}
-
-.about-contact-info h1, h2, h3 {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-weight: bold;
-  color: #222222;
-}
-
-.about-contact-info h1 {
-  font-family: 36px;
-}
-
-.about-contact-info h2 {
-  font-family: 36px;
-}
-
-.about-contact-info h3 {
-  font-family: 36px;
-}
-
-.about-contact-info a {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-weight: bold;
-  color: #333333;
-}
-
-.about-training-workshops {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.about-training-workshops .card {
-  background-color: inherit;
-  padding: 15px;
-  border-radius: 5px;
-  border-width: 2px;
+  font-family: $ctaFontFamily;
+  font-size: $ctaFontSize;
+  font-weight: $ctaFontWeight;
+  text-transform: $ctaTextTransform;
+  color: $ctaColor;
 }
