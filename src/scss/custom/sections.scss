@@ -42,9 +42,27 @@ $ctaColor: #999999;
 }
 
 section {
+  & h1 .section-heading {
+    font-size: 54px;
+  }
+  & h2 .section-heading {
+    font-size: 42px;
+  }
+  & h3 .section-heading {
+    font-size: 21px;
+  }
+  & h4 .section-heading {
+    font-size: 21px;
+  }
+  & h5 .section-heading {
+    font-size: 21px;
+  }
+  & h6 {
+    font-size: 21px;
+  }
   & p {
     font-family: "Georgia", "Times New Roman", serif;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -94,7 +112,12 @@ section {
   font-size: $descriptionFontSize;
   font-weight: $descriptionFontWeight;
   text-transform: $descriptionTextTransform;
+  padding-top: 0px;
+  padding-bottom: 40px;
   color: $descriptionColor;
+  & .section-description-unpadded {
+    padding-bottom: 0px;
+  }
 }
 
 // custom class for cta bar
@@ -104,4 +127,42 @@ section {
   font-weight: $ctaFontWeight;
   text-transform: $ctaTextTransform;
   color: $ctaColor;
+  border-top: none;
+  & h1 {
+    font-family: $ctaFontFamily;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  & h2 {
+    font-family: $ctaFontFamily;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  & h3 {
+    font-family: $ctaFontFamily;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  & h4 {
+    font-family: $ctaFontFamily;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  & h5 {
+    font-family: $ctaFontFamily;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+}
+
+.page-heading {
+  font-family: "Bebas Neue", "OSP-DIN", "Helvetica", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: bolder;
+  color: lighten(#CCCCCC, 40%);
 }

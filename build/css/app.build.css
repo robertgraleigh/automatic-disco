@@ -500,9 +500,46 @@ p {
 .reveal-overlay {
   background-color: #FCFCFC !important; }
 
+.client-img .sm-img {
+  width: 140px;
+  height: 140px; }
+
+.client-img .md-img {
+  width: 140px;
+  height: 140px; }
+
+.client-img .lg-img {
+  width: 140px;
+  height: 140px; }
+
+.client-img .xl-img {
+  width: 140px;
+  height: 140px; }
+
+.card .padded {
+  padding: 10px; }
+
+section h1 .section-heading {
+  font-size: 54px; }
+
+section h2 .section-heading {
+  font-size: 42px; }
+
+section h3 .section-heading {
+  font-size: 21px; }
+
+section h4 .section-heading {
+  font-size: 21px; }
+
+section h5 .section-heading {
+  font-size: 21px; }
+
+section h6 {
+  font-size: 21px; }
+
 section p {
   font-family: "Georgia", "Times New Roman", serif;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .section {
   margin-top: 0px;
@@ -552,22 +589,61 @@ section p {
   font-size: 24px;
   font-weight: bold;
   text-transform: capitalize;
+  padding-top: 0px;
+  padding-bottom: 40px;
   color: #999999; }
+  .section-description .section-description-unpadded {
+    padding-bottom: 0px; }
 
 .cta-bar {
   font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
   font-size: 21px;
   font-weight: bold;
   text-transform: capitalize;
-  color: #999999; }
+  color: #999999;
+  border-top: none; }
+  .cta-bar h1 {
+    font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #333333; }
+  .cta-bar h2 {
+    font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #333333; }
+  .cta-bar h3 {
+    font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #333333; }
+  .cta-bar h4 {
+    font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #333333; }
+  .cta-bar h5 {
+    font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #333333; }
+
+.page-heading {
+  font-family: "Bebas Neue", "OSP-DIN", "Helvetica", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: bolder;
+  color: white; }
 
 .contact-menu {
   background-color: #333333;
   color: #FFFFFF; }
+  .contact-menu ul {
+    padding-top: 40px;
+    padding-bottom: 40px; }
   .contact-menu ul li {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-weight: normal;
-    padding-right: 5px;
+    padding-right: 15px;
     font-size: 16px; }
   .contact-menu span {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
@@ -575,16 +651,6 @@ section p {
     color: #FFFFFF;
     font-size: 16px;
     text-transform: uppercase; }
-
-.primary-nav {
-  background-color: #FFFFFF !important;
-  background-image: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-top: none;
-  border-bottom: none; }
 
 .top-bar {
   margin-top: 0px;
@@ -608,72 +674,54 @@ section p {
   text-transform: capitalize; }
 
 .top-bar-left ul li a:hover {
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: underline; }
 
 .top-bar-right ul li a {
-  font-family: "OSP-DIN", "Arial", sans-serif;
-  font-size: 21px;
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
   font-weight: bold;
-  text-transorm: uppercase; }
+  text-transform: capitalize; }
 
 .top-bar-right ul li a:hover {
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none; }
 
 .cta-bar {
-  background-color: #FCFCFC;
-  border-top: solid 1px #CCCCCC;
+  background-color: #FFFFFF;
+  border-top: none;
   border-bottom: solid 1px #CCCCCC;
   padding-top: 20px;
   padding-bottom: 20px; }
-
-.cta-buttons {
-  margin-top: 15px; }
-
-.secondary-nav {
-  background-color: #FFFFFF;
-  background-image: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border-top: none;
-  border-bottom: solid 5px #333333; }
-
-.footer-nav {
-  background-color: #FFFFFF;
-  background-image: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  border-top: none;
-  border-bottom: solid 5px #333333; }
+  .cta-bar .cta-buttons {
+    margin-top: 10px; }
+    .cta-bar .cta-buttons .button {
+      font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+      font-size: 16px; }
 
 .hero {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-color: #0066cc !important;
+  background-color: #0066cc;
   color: #FFFFFF; }
-
-.hero-heading {
-  font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 100px; }
-
-.hero-subheading {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 100px;
-  padding-bottom: 20px;
-  font-family: "Georgia", "Times New Roman", sans-serif;
-  font-weight: 400;
-  color: #FFFFFF; }
+  .hero h1.hero-heading {
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 100px; }
+  .hero h3.hero-description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: "Georgia", sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF; }
 
 .banner-quote {
   margin-top: 0px;
@@ -829,6 +877,18 @@ section p {
 
 .project-card-button {
   padding-top: 20px; }
+
+.button {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
+
+a.button {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
+
+.button.primary {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif !important; }
+
+.button.secondary {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
 
 .footer {
   background-color: #222222;

@@ -76,9 +76,9 @@
         template: 'src/index.html'
       }),
       new HtmlWebpackPlugin({
-        title: 'About Robert',
-        filename: 'about-robert.html',
-        template: 'src/about-robert.html'
+        title: 'Robert\'s Profile',
+        filename: 'roberts-profile.html',
+        template: 'src/roberts-profile.html'
       }),
       new HtmlWebpackPlugin({
         title: 'Clients',

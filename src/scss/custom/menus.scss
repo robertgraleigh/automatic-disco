@@ -10,18 +10,6 @@ $contactTextTransform: uppercase;
 $contactBorderTop: none;
 $contactBorderBottom: none;
 
-// primary nav variables
-$primary-nav-bg-color: #FFFFFF !important;
-$primary-nav-bg-image: none;
-$primary-nav-link-color: white;
-$primary-nav-link-weight: bold;
-$primary-nav-margin-top: 0px;
-$primary-nav-margin-bottom: 0px;
-$primary-nav-padding-top: 25px;
-$primary-nav-padding-bottom: 25px;
-$primary-nav-border-top: none;
-$primary-nav-border-bottom: none;
-
 // secondary nav variables
 $secondary-nav-bg-color: #FFFFFF;
 $secondary-nav-bg-image: none;
@@ -32,10 +20,6 @@ $secondary-nav-padding-top: 0px;
 $secondary-nav-padding-bottom: 0px;
 $secondary-nav-border-top: none;
 $secondary-nav-border-bottom: solid 5px #333333;
-
-// maps to the default section element
-$cta-bar-border-top: solid 1px #CCCCCC;
-$cta-bar-border-bottom: solid 1px #CCCCCC;
 
 // footer nav variables
 $footer-nav-bg-color: #FFFFFF;
@@ -52,10 +36,14 @@ $footer-nav-border-bottom: solid 5px #333333;
 .contact-menu {
   background-color: $contactBgColor;
   color: $contactColor;
+  & ul {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   & ul li {
     font-family: $contactFontFamily;
     font-weight: $contactFontWeight;
-    padding-right: 5px;
+    padding-right: 15px;
     font-size: 16px;
   }
   & span {
@@ -65,18 +53,6 @@ $footer-nav-border-bottom: solid 5px #333333;
     font-size: $contactFontSize;
     text-transform: $contactTextTransform;
   }
-}
-
-// primary nav
-.primary-nav {
-  background-color: $primary-nav-bg-color;
-  background-image: $primary-nav-bg-image;
-  margin-top: $primary-nav-margin-top;
-  margin-bottom: $primary-nav-margin-bottom;
-  padding-top: $primary-nav-padding-top;
-  padding-bottom: $primary-nav-padding-bottom;
-  border-top: $primary-nav-border-top;
-  border-bottom: $primary-nav-border-bottom;
 }
 
 .top-bar {
@@ -101,61 +77,42 @@ $footer-nav-border-bottom: solid 5px #333333;
   & ul li a {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-size: 16px;
-    font-weight: $primary-nav-link-weight;
+    font-weight: bold;
     text-transform: capitalize;
+
   }
   & ul li a:hover {
-    font-weight: $primary-nav-link-weight;
+    font-weight: bold;
+    text-decoration: underline;
   }
 }
 
 // maps to the customized top bar right class
 .top-bar-right {
   & ul li a {
-    font-family: "OSP-DIN", "Arial", sans-serif;
-    font-size: 21px;
-    font-weight: $primary-nav-link-weight;
-    text-transorm: uppercase;
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
   }
   & ul li a:hover {
-    font-weight: $primary-nav-link-weight;
+    font-weight: bold;
+    text-decoration: none;
   }
 }
 
 // maps to the custom cta bar class
 .cta-bar {
-  background-color: #FCFCFC;
-  border-top: solid 1px #CCCCCC;
+  background-color: #FFFFFF;
+  border-top: none;
   border-bottom: solid 1px #CCCCCC;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-//maps to the cta bar class buttons in the cta-bar
-.cta-buttons {
-  margin-top: 15px;
-}
-
-// secondary nav variables
-.secondary-nav {
-  background-color: $secondary-nav-bg-color;
-  background-image: $secondary-nav-bg-image;
-  margin-top: $secondary-nav-margin-top;
-  margin-bottom: $secondary-nav-margin-bottom;
-  padding-top: $secondary-nav-padding-top;
-  padding-bottom: $secondary-nav-padding-bottom;
-  border-top: $secondary-nav-border-top;
-  border-bottom: $secondary-nav-border-bottom;
-}
-
-// footer nav menu
-.footer-nav {
-  background-color: $footer-nav-bg-color;
-  background-image: $footer-nav-bg-image;
-  margin-top: $footer-nav-margin-top;
-  margin-bottom: $footer-nav-margin-bottom;
-  padding-top: $footer-nav-padding-top;
-  padding-bottom: $footer-nav-padding-bottom;
-  border-top: $footer-nav-border-top;
-  border-bottom: $footer-nav-border-bottom;
+  & .cta-buttons {
+    margin-top: 10px;
+    & .button {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+      font-size: 16px;
+    }
+  }
 }

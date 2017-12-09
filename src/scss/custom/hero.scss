@@ -1,52 +1,28 @@
 // hero.scss
-
-// hero variables
-$hero-margin-top: 0px;
-$hero-margin-bottom: 0px;
-$hero-padding-top: 10vh;
-$hero-padding-bottom: 10vh;
-$hero-background-color: #0066cc !important;
-$hero-background-image: url('http://placehold.it/1000x1000');
-
-// hero heading variables
-$hero-heading-font: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
-$hero-heading-font-weight: 800;
-$hero-heading-font-color: #FFFFFF;
-
-// hero subheading variables
-$hero-subheading-padding-top: 100px;
-$hero-subheading-padding-bottom: 20px;
-$hero-subheading-font: "Georgia", "Times New Roman", sans-serif;
-$hero-subheading-font-weight: 400;
-$hero-subheading-font-color: #FFFFFF;
-
+// convert to a react hero component
 .hero {
-  margin-top: $hero-margin-top;
-  margin-bottom: $hero-margin-bottom;
-  padding-top: $hero-padding-top;
-  padding-bottom: $hero-padding-bottom;
-  background-color: $hero-background-color;
-  color: $hero-heading-font-color;
-}
-
-// hero heading
-.hero-heading {
-  font-family: $hero-heading-font;
-  font-weight: $hero-heading-font-weight;
-  text-transform: uppercase;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 100px;
-}
-
-// hero subheading
-.hero-subheading {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: $hero-subheading-padding-top;
-  padding-bottom: $hero-subheading-padding-bottom;
-  font-family: $hero-subheading-font;
-  font-weight: $hero-subheading-font-weight;
-  color: $hero-subheading-font-color;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: #0066cc;
+  color: #FFFFFF;
+  & h1.hero-heading{
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }
+  & h3.hero-description {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: "Georgia", sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF;
+  }
 }

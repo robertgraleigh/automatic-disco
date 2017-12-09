@@ -68,3 +68,34 @@ p {
 .reveal-overlay {
   background-color: #FCFCFC !important;
 }
+
+.client-img {
+  & .sm-img {
+    width: 140px;
+    height: 140px;
+  }
+  & .md-img  {
+    width: 140px;
+    height: 140px;
+  }
+  & .lg-img {
+    width: 140px;
+    height: 140px;
+  }
+  & .xl-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.project-img {
+  & .sm-img {
+
+  }
+}
+
+.card {
+  & .padded {
+    padding: 10px;
+  }
+}
