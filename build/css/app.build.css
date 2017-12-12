@@ -638,8 +638,8 @@ section p {
   background-color: #333333;
   color: #FFFFFF; }
   .contact-menu ul {
-    padding-top: 40px;
-    padding-bottom: 40px; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .contact-menu ul li {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-weight: normal;
@@ -650,7 +650,8 @@ section p {
     font-weight: normal;
     color: #FFFFFF;
     font-size: 16px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 10px; }
 
 .top-bar {
   margin-top: 0px;

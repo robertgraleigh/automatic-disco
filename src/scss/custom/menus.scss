@@ -37,8 +37,8 @@ $footer-nav-border-bottom: solid 5px #333333;
   background-color: $contactBgColor;
   color: $contactColor;
   & ul {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   & ul li {
     font-family: $contactFontFamily;
@@ -52,6 +52,7 @@ $footer-nav-border-bottom: solid 5px #333333;
     color: $contactColor;
     font-size: $contactFontSize;
     text-transform: $contactTextTransform;
+    margin-top: 10px;
   }
 }
 
