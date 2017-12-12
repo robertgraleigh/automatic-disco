@@ -526,7 +526,7 @@ section h2 .section-heading {
   font-size: 42px; }
 
 section h3 .section-heading {
-  font-size: 21px; }
+  font-size: 18px; }
 
 section h4 .section-heading {
   font-size: 21px; }
@@ -801,6 +801,16 @@ section p {
   line-height: 1.45rem;
   margin-top: 0.9rem;
   margin-bottom: 0.8rem; }
+
+.card-heading {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  line-height: 1.45rem;
+  margin-top: 0px;
+  margin-bottom: 10px; }
 
 .client-card-desc {
   color: #333333;
