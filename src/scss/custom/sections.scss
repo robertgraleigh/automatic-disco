@@ -8,11 +8,11 @@ $headingColor: #333333;
 $headingTextTransform: uppercase;
 
 // custom section description variables
-$descriptionFontFamily: "OSP-DIN", "Helvetica", "Arial", sans-serif;
-$descriptionFontSize: 24px;
+$descriptionFontFamily: "Merriweather", "Helvetica", "Arial", sans-serif;
+$descriptionFontSize: 18px;
 $descriptionFontWeight: bold;
-$descriptionTextTransform: capitalize;
-$descriptionColor: #999999;
+$descriptionTextTransform: none;
+$descriptionColor: #333333;
 
 // custom cta bar variables
 $ctaFontFamily: "OSP-DIN", "Helvetica", "Arial", sans-serif;
@@ -61,7 +61,7 @@ section {
     font-size: 21px;
   }
   & p {
-    font-family: "Georgia", "Times New Roman", serif;
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
     font-size: 16px;
   }
 }
@@ -89,16 +89,16 @@ section {
 
 .section-lg {
   @include section-margin(0px);
-  @include section-padding(60px);
+  @include section-padding(40px);
 }
 
 .section-xl {
   @include section-margin(0px);
-  @include section-padding(60px);
+  @include section-padding(40px);
 }
 
-.hero {
-
+.bordered {
+  border-bottom: solid 2px #333333;
 }
 
 // custom class for section heading
