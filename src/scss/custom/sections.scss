@@ -19,6 +19,7 @@ $ctaFontFamily: "OSP-DIN", "Helvetica", "Arial", sans-serif;
 $ctaFontSize: 21px;
 $ctaFontWeight: bold;
 $ctaTextTransform: capitalize;
+$ctaBgColor: #FFFFFF;
 $ctaColor: #999999;
 
 // mixin for section margin
@@ -107,6 +108,7 @@ section {
   font-size: $headingFontSize;
   font-weight: $headingFontWeight;
   text-transform: $headingTextTransform;
+
   color: $headingColor;
 }
 
@@ -116,7 +118,7 @@ section {
   font-size: $descriptionFontSize;
   font-weight: $descriptionFontWeight;
   text-transform: $descriptionTextTransform;
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 40px;
   color: $descriptionColor;
   & .section-description-unpadded {
@@ -130,8 +132,10 @@ section {
   font-size: $ctaFontSize;
   font-weight: $ctaFontWeight;
   text-transform: $ctaTextTransform;
+  background-color: $ctaBgColor !important;
   color: $ctaColor;
-  border-top: none;
+  border-top: solid 2px #CCCCCC;
+  border-bottom: none;
   & h1 {
     font-family: $ctaFontFamily;
     font-size: 54px;

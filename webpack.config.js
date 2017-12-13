@@ -71,14 +71,14 @@
       }),
       new ExtractTextWebpackPlugin("css/app.build.css"),
       new HtmlWebpackPlugin({
-        title: 'Index`',
+        title: 'Index',
         filename: 'index.html',
         template: 'src/index.html'
       }),
       new HtmlWebpackPlugin({
-        title: 'Robert\'s Profile',
-        filename: 'roberts-profile.html',
-        template: 'src/roberts-profile.html'
+        title: 'About',
+        filename: 'about.html',
+        template: 'src/about.html'
       }),
       new HtmlWebpackPlugin({
         title: 'Clients',

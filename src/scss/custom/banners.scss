@@ -11,6 +11,15 @@ $about-banner-bottom-bg-img: url("http://www.fillmurray.com/g/1200/600");
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #666666;
+  & .orbit-bullets {
+    background-color: #666666;
+  }
+  & .orbit-bullets button {
+      background-color: #CCCCCC;
+  }
+  &.is-active {
+    background-color: #333333;
+  }
 }
 
 .banner-quote .card {

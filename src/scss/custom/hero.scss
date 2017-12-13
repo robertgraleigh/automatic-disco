@@ -1,4 +1,5 @@
 // hero.scss
+
 // convert to a react hero component
 .hero {
   margin-top: 0vh;
@@ -8,13 +9,25 @@
   background-color: #0066cc;
   color: #FFFFFF;
   & h1.hero-heading{
-    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;;
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 100px;
+  }
+  & p.hero-description {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: none;
+  }
+  & span.hero-description {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: none;    
   }
   & h3.hero-description {
     margin-top: 0px;
