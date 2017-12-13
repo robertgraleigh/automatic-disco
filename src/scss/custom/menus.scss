@@ -10,16 +10,13 @@ $contactTextTransform: uppercase;
 $contactBorderTop: none;
 $contactBorderBottom: none;
 
+//primary nav variables
+
 // secondary nav variables
-$secondary-nav-bg-color: #FFFFFF;
-$secondary-nav-bg-image: none;
+$secondary-nav-bg-color: #222222;
 $secondary-nav-link-color: white;
-$secondary-nav-margin-top: 0px;
-$secondary-nav-margin-bottom: 0px;
-$secondary-nav-padding-top: 0px;
-$secondary-nav-padding-bottom: 0px;
 $secondary-nav-border-top: none;
-$secondary-nav-border-bottom: solid 5px #333333;
+$secondary-nav-border-bottom: none;
 
 // footer nav variables
 $footer-nav-bg-color: #FFFFFF;
@@ -31,6 +28,19 @@ $footer-nav-padding-top: 0px;
 $footer-nav-padding-bottom: 0px;
 $footer-nav-border-top: none;
 $footer-nav-border-bottom: solid 5px #333333;
+
+@mixin margin ($top:null, $right:null, $bottom:null, $left:null) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+@mixin padding ($top:null, $right:null, $bottom:null, $left: null) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
 
 // contact menu
 .contact-menu {
@@ -116,4 +126,10 @@ $footer-nav-border-bottom: solid 5px #333333;
       font-size: 16px;
     }
   }
+}
+
+.secondary-nav {
+  @include margin (null, null, null, null);
+  @include padding (40px, null, 40px, null);
+  background-color: $secondary-nav-bg-color;
 }

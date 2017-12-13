@@ -519,66 +519,33 @@ p {
 .card .padded {
   padding: 10px; }
 
-section h1 .section-heading {
-  font-size: 54px; }
-
-section h2 .section-heading {
-  font-size: 42px; }
-
-section h3 .section-heading {
-  font-size: 18px; }
-
-section h4 .section-heading {
-  font-size: 21px; }
-
-section h5 .section-heading {
-  font-size: 21px; }
-
-section h6 {
-  font-size: 21px; }
-
-section p {
-  font-family: "Merriweather", "Georgia", "Times New Roman", serif;
-  font-size: 16px; }
-
-.section {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px; }
-
-.section-xs {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px; }
-
-.section-sm {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.section-md {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-.section-lg {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-
-.section-xl {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-
-.bordered {
-  border-bottom: solid 2px #333333; }
+section {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  section h1 .section-heading {
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-size: 54px; }
+  section h2 .section-heading {
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-size: 42px; }
+  section h3 .section-heading {
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-size: 18px; }
+  section h4 .section-heading {
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-size: 21px; }
+  section h5 .section-heading {
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-size: 21px; }
+  section h6 {
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-size: 21px; }
+  section p .section-description {
+    font-family: "Merriweather", "Helvetica", "Arial", sans-serif;
+    font-size: 16px; }
+  section span .section-description {
+    font-family: "Merriweather", "Helvetica", "Arial", sans-serif;
+    font-size: 16px; }
 
 .section-heading {
   font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
@@ -632,12 +599,6 @@ section p {
     font-size: 21px;
     text-transform: uppercase;
     color: #333333; }
-
-.page-heading {
-  font-family: "Bebas Neue", "OSP-DIN", "Helvetica", "Arial", sans-serif;
-  font-size: 54px;
-  font-weight: bolder;
-  color: white; }
 
 .contact-menu {
   background-color: #333333;
@@ -704,6 +665,11 @@ section p {
     .cta-bar .cta-buttons .button {
       font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
       font-size: 16px; }
+
+.secondary-nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #222222; }
 
 .hero {
   padding-top: 60px;
@@ -1002,34 +968,51 @@ a.button {
 .button.secondary {
   font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
 
-.footer {
+footer {
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: #222222;
   color: #999999;
-  font-family: Helvetica, Arial, sans-serif;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px; }
-
-.footer-heading {
-  font-family: "Merriweather Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.footer-paragraph {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 14px; }
-
-.footer-address {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 14px; }
+  font-family: "Merriweather", "Georgia", "Times New Roman", serif; }
+  footer h3 {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  footer h4 {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  footer p {
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+    font-size: 16px; }
+  footer span {
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+    font-size: 16px; }
+  footer a {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    color: #999999; }
+  footer a:hover {
+    color: #666666; }
+  footer a:active {
+    color: #666666; }
+  footer address {
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+    font-size: 16px; }
 
 .copyright {
-  margin-top: 0px;
-  margin-bottom: 0px;
   padding-top: 20px;
   padding-bottom: 0px; }
+  .copyright p {
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+    font-size: 16px; }
+  .copyright span {
+    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+    font-size: 16px; }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document

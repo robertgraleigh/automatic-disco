@@ -14,6 +14,9 @@ $descriptionFontWeight: bold;
 $descriptionTextTransform: none;
 $descriptionColor: #333333;
 
+// custom section body copy font variables
+$bodyFontFamily: "Merriweather", "Helvetica", "Arial", sans-serif;
+
 // custom cta bar variables
 $ctaFontFamily: "OSP-DIN", "Helvetica", "Arial", sans-serif;
 $ctaFontSize: 21px;
@@ -22,84 +25,54 @@ $ctaTextTransform: capitalize;
 $ctaBgColor: #FFFFFF;
 $ctaColor: #999999;
 
-// mixin for section margin
-@mixin section-margin($margin: 0px) {
-  margin-top: $margin;
-  margin-bottom: $margin;
+@mixin margin ($top:null, $right:null, $bottom:null, $left:null) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
 }
-
-// mixin for section padding
-@mixin section-padding($padding: 0px) {
-  padding-top: $padding;
-  padding-bottom: $padding;
-}
-
-// mixin for section border
-@mixin section-border($borderTop: none, $borderRight: none, $borderBottom: none, $borderLeft: none) {
-  border-top: $borderTop;
-  border-right: $borderRight;
-  border-bottom: $borderBottom;
-  border-left: $borderLeft;
+@mixin padding ($top:null, $right:null, $bottom:null, $left: null) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
 }
 
 section {
+  @include margin (null, null, null, null);
+  @include padding (60px, null, 60px, null);
   & h1 .section-heading {
+    font-family: $headingFontFamily;
     font-size: 54px;
   }
   & h2 .section-heading {
+    font-family: $headingFontFamily;
     font-size: 42px;
   }
   & h3 .section-heading {
+    font-family: $headingFontFamily;
     font-size: 18px;
   }
   & h4 .section-heading {
+    font-family: $headingFontFamily;
     font-size: 21px;
   }
   & h5 .section-heading {
+    font-family: $headingFontFamily;
     font-size: 21px;
   }
   & h6 {
+    font-family: $headingFontFamily;
     font-size: 21px;
   }
-  & p {
-    font-family: "Merriweather", "Georgia", "Times New Roman", serif;
+  & p .section-description{
+    font-family: $bodyFontFamily;
     font-size: 16px;
   }
-}
-
-// positioning classes for custom sections
-.section {
-  @include section-margin;
-  @include section-padding;
-}
-
-.section-xs {
-  @include section-margin(0px);
-  @include section-padding(5px);
-}
-
-.section-sm {
-  @include section-margin(0px);
-  @include section-padding(10px);
-}
-
-.section-md {
-  @include section-margin(0px);
-  @include section-padding(20px);
-}
-
-.section-lg {
-  @include section-margin(0px);
-  @include section-padding(40px);
-}
-
-.section-xl {
-  @include section-margin(0px);
-  @include section-padding(40px);
-}
-
-.bordered {
-  border-bottom: solid 2px #333333;
+  & span .section-description {
+    font-family: $bodyFontFamily;
+    font-size: 16px;
+  }
 }
 
 // custom class for section heading
@@ -108,7 +81,6 @@ section {
   font-size: $headingFontSize;
   font-weight: $headingFontWeight;
   text-transform: $headingTextTransform;
-
   color: $headingColor;
 }
 
@@ -166,11 +138,4 @@ section {
     text-transform: uppercase;
     color: #333333;
   }
-}
-
-.page-heading {
-  font-family: "Bebas Neue", "OSP-DIN", "Helvetica", "Arial", sans-serif;
-  font-size: 54px;
-  font-weight: bolder;
-  color: lighten(#CCCCCC, 40%);
 }

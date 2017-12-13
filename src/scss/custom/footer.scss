@@ -1,58 +1,90 @@
 // footer.scss
 
-// footer variables
-$footer-bg-color: #222222;
-$footer-text-color: #999999;
-$footer-display-font-family: Helvetica, Arial, sans-serif;
-$footer-margin-top: 0px;
-$footer-margin-bottom: 0px;
-$footer-padding-top: 40px;
-$footer-padding-bottom: 40px;
-$footer-text-transform: uppercase;
+// footer color variables
+$bgColor: #222222;
+$color: #999999;
 
-// footer heading variables
-$footer-heading-font: "Merriweather Sans", "Arial", sans-serif;
-$footer-heading-font-size: 18px;
-$footer-heading-font-weight: bold;
-$footer-heading-text-transform: uppercase;
+// footer heading typography variables
+$headingFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+$headingTextTransform: uppercase;
+$headingFontSize: 24px;
+$headingFontWeight: bold;
 
-// copright variables
-$copyright-margin-top: 0px;
-$copyright-margin-bottom: 0px;
-$copyright-padding-top: 20px;
-$copyright-padding-bottom: 0px;
+// footer body typography variables
+$bodyFontFamily: "Merriweather", "Georgia", "Times New Roman", serif;
+$bodyFontSize: 16px;
+$bodyFontWeight: normal;
+
+// copyright variables
+
+// mixin for setting margin
+@mixin margin ($top:null, $right:null, $bottom:null, $left:null) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+// mixin for setting padding
+@mixin padding ($top:null, $right:null, $bottom:null, $left: null) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
 
 // footer styles
-.footer {
-  background-color: $footer-bg-color;
-  color: $footer-text-color;
-  font-family: $footer-display-font-family;
-  margin-top: $footer-margin-top;
-  margin-bottom: $footer-margin-bottom;
-  padding-top: $footer-padding-top;
-  padding-bottom: $footer-padding-bottom;
-}
-
-.footer-heading {
-  font-family: $footer-heading-font;
-  font-size: $footer-heading-font-size;
-  font-weight: $footer-heading-font-weight;
-  text-transform: $footer-heading-text-transform;
-}
-
-.footer-paragraph {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 14px;
-}
-
-.footer-address {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 14px;
+footer {
+  @include margin (null, null, null, null);
+  @include padding (0px, null, 0px, null);
+  background-color: $bgColor;
+  color: $color;
+  font-family: $bodyFontFamily;
+  & h3 {
+    font-family: $headingFontFamily;
+    font-size: $headingFontSize;
+    font-weight: $headingFontWeight;
+    text-transform: $headingTextTransform;
+  }
+  & h4 {
+    font-family: $headingFontFamily;
+    font-size: $headingFontSize;
+    font-weight: $headingFontWeight;
+    text-transform: $headingTextTransform;
+  }
+  & p {
+    font-family: $bodyFontFamily;
+    font-size: $bodyFontSize;
+  }
+  & span {
+    font-family: $bodyFontFamily;
+    font-size: $bodyFontSize;
+  }
+  & a {
+    @include margin (0px, 0px, 5px, 0px);
+    color: $color;
+  }
+  & a:hover {
+    color: darken($color, 20%);
+  }
+  & a:active {
+    color: darken($color, 20%);
+  }
+  & address {
+    font-family: $bodyFontFamily;
+    font-size: $bodyFontSize;;
+  }
 }
 
 .copyright {
-  margin-top: $copyright-margin-top;
-  margin-bottom: $copyright-margin-bottom;
-  padding-top: $copyright-padding-top;
-  padding-bottom: $copyright-padding-bottom;
+  @include margin (null, null, null, null);
+  @include padding (20px, null, 0px, null);
+  & p {
+    font-family: $bodyFontFamily;
+    font-size: $bodyFontSize;
+  }
+  & span {
+    font-family: $bodyFontFamily;
+    font-size: $bodyFontSize;
+  }
 }
