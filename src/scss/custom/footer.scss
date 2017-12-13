@@ -15,7 +15,8 @@ $bodyFontFamily: "Merriweather", "Georgia", "Times New Roman", serif;
 $bodyFontSize: 16px;
 $bodyFontWeight: normal;
 
-// copyright variables
+// anchor variables
+$anchor-text-decoration-hover: underline;
 
 // mixin for setting margin
 @mixin margin ($top:null, $right:null, $bottom:null, $left:null) {
@@ -66,9 +67,11 @@ footer {
   }
   & a:hover {
     color: darken($color, 20%);
+    text-decoration: $anchor-text-decoration-hover;
   }
   & a:active {
     color: darken($color, 20%);
+    text-decoration: $anchor-text-decoration-hover;
   }
   & address {
     font-family: $bodyFontFamily;

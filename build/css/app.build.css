@@ -602,7 +602,7 @@ section {
 
 .contact-menu {
   background-color: #333333;
-  color: #FFFFFF; }
+  color: #999999; }
   .contact-menu ul {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -614,7 +614,7 @@ section {
   .contact-menu span {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-weight: normal;
-    color: #FFFFFF;
+    color: #999999;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 10px; }
@@ -670,6 +670,13 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #222222; }
+
+a.secondary-link {
+  color: #999999; }
+
+a.secondary-link:hover {
+  color: #666666 !important;
+  text-decoration: underline; }
 
 .hero {
   padding-top: 60px;
@@ -997,9 +1004,11 @@ footer {
     margin-left: 0px;
     color: #999999; }
   footer a:hover {
-    color: #666666; }
+    color: #666666;
+    text-decoration: underline; }
   footer a:active {
-    color: #666666; }
+    color: #666666;
+    text-decoration: underline; }
   footer address {
     font-family: "Merriweather", "Georgia", "Times New Roman", serif;
     font-size: 16px; }
@@ -3655,7 +3664,8 @@ a {
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
-    color: #0058af; }
+    color: #0058af;
+    text-decoration: underline; }
   a img {
     border: 0; }
 

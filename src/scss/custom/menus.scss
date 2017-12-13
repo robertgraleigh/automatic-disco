@@ -5,7 +5,7 @@ $contactBgColor: #333333;
 $contactFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
 $contactFontSize: 16px;
 $contactFontWeight: normal;
-$contactColor: #FFFFFF;
+$contactColor: #999999;
 $contactTextTransform: uppercase;
 $contactBorderTop: none;
 $contactBorderBottom: none;
@@ -13,10 +13,9 @@ $contactBorderBottom: none;
 //primary nav variables
 
 // secondary nav variables
-$secondary-nav-bg-color: #222222;
-$secondary-nav-link-color: white;
-$secondary-nav-border-top: none;
-$secondary-nav-border-bottom: none;
+$secondaryNavBgColor: #222222;
+$secondaryNavLinkColor: #999999;
+$anchor-text-decoration-hover: underline;
 
 // footer nav variables
 $footer-nav-bg-color: #FFFFFF;
@@ -90,7 +89,6 @@ $footer-nav-border-bottom: solid 5px #333333;
     font-size: 16px;
     font-weight: bold;
     text-transform: capitalize;
-
   }
   & ul li a:hover {
     font-weight: bold;
@@ -131,5 +129,14 @@ $footer-nav-border-bottom: solid 5px #333333;
 .secondary-nav {
   @include margin (null, null, null, null);
   @include padding (40px, null, 40px, null);
-  background-color: $secondary-nav-bg-color;
+  background-color: $secondaryNavBgColor;
+}
+
+a.secondary-link {
+  color: $secondaryNavLinkColor;
+}
+
+a.secondary-link:hover {
+  color: darken($secondaryNavLinkColor, 20%) !important;
+  text-decoration: $anchor-text-decoration-hover;
 }
