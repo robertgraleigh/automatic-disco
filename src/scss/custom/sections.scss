@@ -41,38 +41,47 @@ $ctaColor: #999999;
 section {
   @include margin (null, null, null, null);
   @include padding (60px, null, 60px, null);
-  & h1 .section-heading {
+  border-bottom: solid 2px #CCCCCC;
+  & h1.section-heading {
+    @include margin (null, null, null, null);
+    @include padding (0px, null, 60px, null);
     font-family: $headingFontFamily;
     font-size: 54px;
   }
-  & h2 .section-heading {
+  & h2.section-heading {
+    @include margin (null, null, null, null);
+    @include padding (0px, null, 60px, null);
     font-family: $headingFontFamily;
     font-size: 42px;
   }
-  & h3 .section-heading {
+  & h3.section-heading {
     font-family: $headingFontFamily;
     font-size: 18px;
   }
-  & h4 .section-heading {
+  & h4.section-heading {
     font-family: $headingFontFamily;
     font-size: 21px;
   }
-  & h5 .section-heading {
+  & h5.section-heading {
     font-family: $headingFontFamily;
     font-size: 21px;
   }
-  & h6 {
+  & h6.section-heading {
     font-family: $headingFontFamily;
     font-size: 21px;
   }
-  & p .section-description{
+  & p.section-description{
     font-family: $bodyFontFamily;
     font-size: 16px;
   }
-  & span .section-description {
+  & span.section-description {
     font-family: $bodyFontFamily;
     font-size: 16px;
   }
+}
+
+.blue-border {
+  border-bottom: solid 5px #0066CC;
 }
 
 // custom class for section heading
@@ -100,14 +109,18 @@ section {
 
 // custom class for cta bar
 .cta-bar {
+  @include margin (null, null, null, null);
+  @include padding (15px, null, 10px, null);
   font-family: $ctaFontFamily;
   font-size: $ctaFontSize;
   font-weight: $ctaFontWeight;
   text-transform: $ctaTextTransform;
-  background-color: $ctaBgColor !important;
-  color: $ctaColor;
+  background-image: url("/img/swirl_pattern.png");
+  background-image: linear-gradient(20%);
+  background-color: none;
   border-top: solid 2px #CCCCCC;
-  border-bottom: none;
+  border-bottom: solid 2px #CCCCCC;
+  color: $ctaColor;
   & h1 {
     font-family: $ctaFontFamily;
     font-size: 54px;
@@ -137,5 +150,20 @@ section {
     font-size: 21px;
     text-transform: uppercase;
     color: #333333;
+  }
+}
+
+.about-contact-info {
+  @include breakpoint(small) {
+    background-image:url("/img/interchange/nxt-industries-conference-room-bw-640px.png");
+  }
+  @include breakpoint(medium) {
+    background-image:url("/img/interchange/nxt-industries-conference-room-bw-1024px.png");
+  }
+  @include breakpoint(large) {
+    background-image:url("/img/interchange/nxt-industries-conference-room-bw-1200px.png");
+  }
+  @include breakpoint(xlarge) {
+    background-image:url("/img/interchange/nxt-industries-conference-room-bw-1440px.png");
   }
 }

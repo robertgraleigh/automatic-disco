@@ -1,247 +1,42 @@
 // cards.scss
+$cardHeading: "Merriweather Sans", "Arial", sans-serif;
+$cardDescription: "Merriweather", "Georgia", "Arial", serif;
 
 // default client card
 .card {
-  & .padded {
-    padding: 10px;
-  }
-}
-
-// client-card variables
-$client-card-border-top: solid 5px #0066cc;
-
-.client-card {
+  @include margin (null, null, null, null);
+  @include padding (10px, 10px, 10px, 10px);
   background-color: $white;
-  border-top: $client-card-border-top;
-  border-left: 1px solid $light-gray;
+  border-top: solid 5px #0066CC !important;
+  border-left: solid 1px $light-gray;
   border-right: solid 1px $light-gray;
   border-bottom: solid 1px $light-gray;
-  margin-top: 0rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-}
-
-.client-card-img {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.client-card-thumbnail-img {
-  display: block;
-  position: relative;
-  width: 140px;
-  height: 140px;
-  z-index: 100;
-}
-
-.client-card-title {
-  font-family: "Merriweather Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: darken($dark-gray,30%);
-  line-height: 1.45rem;
-  margin-top: 0.9rem;
-  margin-bottom: 0.8rem;
-}
-
-.card-heading {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: darken($dark-gray,30%);
-  line-height: 1.45rem;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.client-card-desc {
-  color: $dark-gray;
-  display: block;
-  font-family: 'Open sans', sans-serif;
-  font-size: 0.85rem;
-}
-
-.client-card-industry {
-  color: darken($dark-gray,30%);
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-top: 0.8rem;
-}
-
-.client-card-sale {
-  color: $medium-gray;
-  display: inline-block;
-  font-size: 0.85rem;
-  margin-left: 0.3rem;
-  text-decoration: line-through;
-}
-
-.client-card-colors {
-  display: block;
-  margin-top: 0.8rem;
-}
-
-.client-card-color-option {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-}
-
-.client-card-button {
-  padding-top: 20px;
-}
-
-$card-user-profile-bg: $card-background;
-$card-user-profile-text-color: $body-font-color;
-
-.card-user-profile {
-  position: relative;
-  z-index: 0;
-  @include card-container($card-user-profile-bg, $card-user-profile-text-color, 1rem, $global-radius);
-
-  &:hover {
-    .card-user-profile-img {
-      opacity: 1;
-    }
+  & .client-image {
+    @include margin (null, null, null, null);
+    @include padding (null, null, null, null);
   }
-}
-
-.card-user-profile-content {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: '';
-    top: rem-calc(-55);
-    left: rem-calc(-30);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: rem-calc(55) 0 0 rem-calc(500);
-    z-index: 0;
-    border-color: transparent transparent transparent $card-user-profile-bg;
+  & .card-heading {
+    @include margin (null, null, null, null);
+    @include padding (10px, 0px, 10px, 0px);
+    font-family: $cardHeading;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: darken($dark-gray,30%);
+    line-height: 1.45rem;
   }
-}
-
-.card-user-profile-actions {
-  @include card-divider;
-  background: $card-user-profile-bg;
-  display: flex;
-}
-
-.card-user-profile-img {
-  max-width: 100%;
-  opacity: 0.85;
-  transition: all 0.25s ease;
-}
-
-.card-user-profile-avatar {
-  position: absolute;
-  bottom: 100%;
-  left: 1rem;
-  z-index: 2;
-  max-width: rem-calc(90);
-
-  img {
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba($black, 0.3);
+  & .card-description {
+    @include margin (null, null, null, null);
+    @include padding (null, null, 10px, null);
+    font-family: $cardDescription;
+    font-size: 14px;
   }
-}
-
-.card-user-profile-name {
-  margin-bottom: 0;
-  font-weight: 300;
-  font-size: 1.5rem;
-}
-
-.card-user-profile-button {
-  margin-bottom: 0;
-  flex: 1 0 0;
-
-  + .card-user-profile-button {
-    margin-left: 1rem;
+  & .card-category {
+    @include margin (null, null, null, null);
+    @include padding (null, null, 10px, null);
   }
-}
-
-.card-user-profile-info {
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  opacity: 0.8;
-}
-
-// project-card.scss
-
-// project-cart variables
-$project-card-border-top: solid 5px #0070C0;
-$project-card-bg-color: #FFFFFF !important;
-
-.project-card {
-  background-color: $project-card-bg-color;
-  border-top: $project-card-border-top;
-  border-left: 1px solid $light-gray;
-  border-right: solid 1px $light-gray;
-  border-bottom: solid 1px $light-gray;
-  padding: 1rem;
-  margin-top: 0rem;
-  margin-bottom: 1.5rem;
-}
-
-.project-card-thumbnail {
-  display: block;
-  position: relative;
-}
-
-.project-card-title {
-  font-family: "Merriweather Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: darken($dark-gray,30%);
-  line-height: 1.45rem;
-  margin-top: 0.9rem;
-  margin-bottom: 0.8rem;
-}
-
-.project-card-desc {
-  color: $dark-gray;
-  display: block;
-  font-family: 'Open sans', sans-serif;
-  font-size: 0.85rem;
-}
-
-.project-card-price {
-  color: darken($dark-gray,30%);
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-top: 0.8rem;
-}
-
-.project-card-sale {
-  color: $medium-gray;
-  display: inline-block;
-  font-size: 0.85rem;
-  margin-left: 0.3rem;
-  text-decoration: line-through;
-}
-
-.project-card-colors {
-  display: block;
-  margin-top: 0.8rem;
-}
-
-.project-card-color-option {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-}
-
-.project-card-button {
-  padding-top: 20px;
+  & .card-button {
+    @include margin (null, null, null, null);
+    @include padding (null, null, null, null);
+  }
 }

@@ -518,31 +518,39 @@ p {
 
 section {
   padding-top: 60px;
-  padding-bottom: 60px; }
-  section h1 .section-heading {
+  padding-bottom: 60px;
+  border-bottom: solid 2px #CCCCCC; }
+  section h1.section-heading {
+    padding-top: 0px;
+    padding-bottom: 60px;
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 54px; }
-  section h2 .section-heading {
+  section h2.section-heading {
+    padding-top: 0px;
+    padding-bottom: 60px;
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 42px; }
-  section h3 .section-heading {
+  section h3.section-heading {
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 18px; }
-  section h4 .section-heading {
+  section h4.section-heading {
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 21px; }
-  section h5 .section-heading {
+  section h5.section-heading {
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 21px; }
-  section h6 {
+  section h6.section-heading {
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 21px; }
-  section p .section-description {
+  section p.section-description {
     font-family: "Merriweather", "Helvetica", "Arial", sans-serif;
     font-size: 16px; }
-  section span .section-description {
+  section span.section-description {
     font-family: "Merriweather", "Helvetica", "Arial", sans-serif;
     font-size: 16px; }
+
+.blue-border {
+  border-bottom: solid 5px #0066CC; }
 
 .section-heading {
   font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
@@ -563,14 +571,18 @@ section {
     padding-bottom: 0px; }
 
 .cta-bar {
+  padding-top: 15px;
+  padding-bottom: 10px;
   font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
   font-size: 21px;
   font-weight: bold;
   text-transform: capitalize;
-  background-color: #FFFFFF !important;
-  color: #999999;
+  background-image: url("/img/swirl_pattern.png");
+  background-image: linear-gradient(20%);
+  background-color: none;
   border-top: solid 2px #CCCCCC;
-  border-bottom: none; }
+  border-bottom: solid 2px #CCCCCC;
+  color: #999999; }
   .cta-bar h1 {
     font-family: "OSP-DIN", "Helvetica", "Arial", sans-serif;
     font-size: 54px;
@@ -596,6 +608,18 @@ section {
     font-size: 21px;
     text-transform: uppercase;
     color: #333333; }
+
+.about-contact-info {
+  background-image: url("/img/interchange/nxt-industries-conference-room-bw-640px.png"); }
+  @media print, screen and (min-width: 40em) {
+    .about-contact-info {
+      background-image: url("/img/interchange/nxt-industries-conference-room-bw-1024px.png"); } }
+  @media print, screen and (min-width: 64em) {
+    .about-contact-info {
+      background-image: url("/img/interchange/nxt-industries-conference-room-bw-1200px.png"); } }
+  @media screen and (min-width: 75em) {
+    .about-contact-info {
+      background-image: url("/img/interchange/nxt-industries-conference-room-bw-1440px.png"); } }
 
 .contact-menu {
   padding-top: 10px;
@@ -740,213 +764,33 @@ li .orbit-slide .is-active {
 .quote-carousel-icon {
   font-size: 24px; }
 
-.card .padded {
-  padding: 10px; }
-
-.client-card {
+.card {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   background-color: #FFFFFF;
-  border-top: solid 5px #0066cc;
-  border-left: 1px solid #CCCCCC;
+  border-top: solid 5px #0066CC !important;
+  border-left: solid 1px #CCCCCC;
   border-right: solid 1px #CCCCCC;
-  border-bottom: solid 1px #CCCCCC;
-  margin-top: 0rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem; }
-
-.client-card-img {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px; }
-
-.client-card-thumbnail-img {
-  display: block;
-  position: relative;
-  width: 140px;
-  height: 140px;
-  z-index: 100; }
-
-.client-card-title {
-  font-family: "Merriweather Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: black;
-  line-height: 1.45rem;
-  margin-top: 0.9rem;
-  margin-bottom: 0.8rem; }
-
-.card-heading {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: black;
-  line-height: 1.45rem;
-  margin-top: 0px;
-  margin-bottom: 10px; }
-
-.client-card-desc {
-  color: #333333;
-  display: block;
-  font-family: 'Open sans', sans-serif;
-  font-size: 0.85rem; }
-
-.client-card-industry {
-  color: black;
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-top: 0.8rem; }
-
-.client-card-sale {
-  color: #666666;
-  display: inline-block;
-  font-size: 0.85rem;
-  margin-left: 0.3rem;
-  text-decoration: line-through; }
-
-.client-card-colors {
-  display: block;
-  margin-top: 0.8rem; }
-
-.client-card-color-option {
-  display: inline-block;
-  height: 25px;
-  width: 25px; }
-
-.client-card-button {
-  padding-top: 20px; }
-
-.card-user-profile {
-  position: relative;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  margin-bottom: 1rem;
-  border: 0;
-  border-radius: 0;
-  background: #FFFFFF;
-  box-shadow: none;
-  overflow: hidden;
-  color: #000000; }
-  .card-user-profile > :last-child {
-    margin-bottom: 0; }
-  .card-user-profile:hover .card-user-profile-img {
-    opacity: 1; }
-
-.card-user-profile-content {
-  position: relative; }
-  .card-user-profile-content::before {
-    position: absolute;
-    content: '';
-    top: -3.4375rem;
-    left: -1.875rem;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 3.4375rem 0 0 31.25rem;
-    z-index: 0;
-    border-color: transparent transparent transparent #FFFFFF; }
-
-.card-user-profile-actions {
-  flex: 0 1 auto;
-  display: flex;
-  padding: 1rem;
-  background: #CCCCCC;
-  background: #FFFFFF;
-  display: flex; }
-  .card-user-profile-actions > :last-child {
-    margin-bottom: 0; }
-
-.card-user-profile-img {
-  max-width: 100%;
-  opacity: 0.85;
-  transition: all 0.25s ease; }
-
-.card-user-profile-avatar {
-  position: absolute;
-  bottom: 100%;
-  left: 1rem;
-  z-index: 2;
-  max-width: 5.625rem; }
-  .card-user-profile-avatar img {
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
-
-.card-user-profile-name {
-  margin-bottom: 0;
-  font-weight: 300;
-  font-size: 1.5rem; }
-
-.card-user-profile-button {
-  margin-bottom: 0;
-  flex: 1 0 0; }
-  .card-user-profile-button + .card-user-profile-button {
-    margin-left: 1rem; }
-
-.card-user-profile-info {
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  opacity: 0.8; }
-
-.project-card {
-  background-color: #FFFFFF !important;
-  border-top: solid 5px #0070C0;
-  border-left: 1px solid #CCCCCC;
-  border-right: solid 1px #CCCCCC;
-  border-bottom: solid 1px #CCCCCC;
-  padding: 1rem;
-  margin-top: 0rem;
-  margin-bottom: 1.5rem; }
-
-.project-card-thumbnail {
-  display: block;
-  position: relative; }
-
-.project-card-title {
-  font-family: "Merriweather Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: black;
-  line-height: 1.45rem;
-  margin-top: 0.9rem;
-  margin-bottom: 0.8rem; }
-
-.project-card-desc {
-  color: #333333;
-  display: block;
-  font-family: 'Open sans', sans-serif;
-  font-size: 0.85rem; }
-
-.project-card-price {
-  color: black;
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-top: 0.8rem; }
-
-.project-card-sale {
-  color: #666666;
-  display: inline-block;
-  font-size: 0.85rem;
-  margin-left: 0.3rem;
-  text-decoration: line-through; }
-
-.project-card-colors {
-  display: block;
-  margin-top: 0.8rem; }
-
-.project-card-color-option {
-  display: inline-block;
-  height: 25px;
-  width: 25px; }
-
-.project-card-button {
-  padding-top: 20px; }
+  border-bottom: solid 1px #CCCCCC; }
+  .card .card-heading {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    font-family: "Merriweather Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    line-height: 1.45rem; }
+  .card .card-description {
+    padding-bottom: 10px;
+    font-family: "Merriweather", "Georgia", "Arial", serif;
+    font-size: 14px; }
+  .card .card-category {
+    padding-bottom: 10px; }
 
 .button {
   font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
