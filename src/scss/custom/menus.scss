@@ -46,7 +46,8 @@ $footer-nav-border-bottom: solid 5px #333333;
 .contact-menu {
   @include margin (null, null, null, null);
   @include padding (10px, null, 10px, null);
-  background-color: $contactBgColor;
+  background-image: url("/img/black_lozenge.png");
+  //background-color: $contactBgColor;
   color: $contactColor;
   & ul {
     @include margin (null, null, null, null);
@@ -136,6 +137,7 @@ $footer-nav-border-bottom: solid 5px #333333;
 .secondary-nav {
   @include margin (null, null, null, null);
   @include padding (40px, null, 40px, null);
+  background-image: url("/img/black_lozenge.png");
   background-color: $secondaryNavBgColor;
 }
 

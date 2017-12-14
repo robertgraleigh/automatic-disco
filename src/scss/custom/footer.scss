@@ -38,9 +38,16 @@ $anchor-text-decoration-hover: underline;
 footer {
   @include margin (null, null, null, null);
   @include padding (20px, null, 0px, null);
-  background-color: $bgColor;
+  // background-color: $bgColor;
+  background-image: url("/img/black_lozenge.png");
   color: $color;
   font-family: $bodyFontFamily;
+  & h2 {
+    font-family: $headingFontFamily;
+    font-size: $headingFontSize;
+    font-weight: $headingFontWeight;
+    text-transform: $headingTextTransform;
+  }
   & h3 {
     font-family: $headingFontFamily;
     font-size: $headingFontSize;
@@ -48,6 +55,18 @@ footer {
     text-transform: $headingTextTransform;
   }
   & h4 {
+    font-family: $headingFontFamily;
+    font-size: $headingFontSize;
+    font-weight: $headingFontWeight;
+    text-transform: $headingTextTransform;
+  }
+  & h5 {
+    font-family: $headingFontFamily;
+    font-size: $headingFontSize;
+    font-weight: $headingFontWeight;
+    text-transform: $headingTextTransform;
+  }
+  & h6 {
     font-family: $headingFontFamily;
     font-size: $headingFontSize;
     font-weight: $headingFontWeight;

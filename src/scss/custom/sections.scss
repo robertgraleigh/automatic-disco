@@ -41,7 +41,6 @@ $ctaColor: #999999;
 section {
   @include margin (null, null, null, null);
   @include padding (60px, null, 60px, null);
-  border-bottom: solid 2px #CCCCCC;
   & h1.section-heading {
     @include margin (null, null, null, null);
     @include padding (0px, null, 60px, null);
@@ -118,8 +117,8 @@ section {
   background-image: url("/img/swirl_pattern.png");
   background-image: linear-gradient(20%);
   background-color: none;
-  border-top: solid 2px #CCCCCC;
-  border-bottom: solid 2px #CCCCCC;
+  border-top: solid 2px #CCCCCC !important;
+  border-bottom: solid 2px #CCCCCC !important;
   color: $ctaColor;
   & h1 {
     font-family: $ctaFontFamily;

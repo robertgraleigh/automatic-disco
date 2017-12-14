@@ -31,7 +31,7 @@ $cardDescription: "Merriweather", "Georgia", "Arial", serif;
     font-family: $cardDescription;
     font-size: 14px;
   }
-  & .card-category {
+  & .card-industry {
     @include margin (null, null, null, null);
     @include padding (null, null, 10px, null);
   }
