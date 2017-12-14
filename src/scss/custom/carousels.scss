@@ -1,0 +1,85 @@
+// carousels.scss
+
+// custom quote carousel component variables
+$quoteCarouselBGColor: #666666;
+$quoteCarouselColor: #999999;
+$orbitsBulletsBgColor: #CCCCCC;
+$orbitsBulletsBgColorActive: #333333;
+
+@mixin margin ($top:null, $right:null, $bottom:null, $left:null) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin padding ($top:null, $right:null, $bottom:null, $left: null) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+// maps to the custom banner quote carousel component
+.quote-carousel {
+  @include margin (null, null, null, null);
+  @include padding (null, null, null, null);
+  background-color: $quoteCarouselBGColor;
+  color: $quoteCarouselColor;
+  & .orbit-bullets {
+    background-color: $quoteCarouselBGColor;
+  }
+  & .orbit-bullets button {
+    background-color: $orbitsBulletsBgColor;
+  }
+  & .is-active {
+    background-color: $orbitsBulletsBgColorActive;
+  }
+  & .card {
+    background-color: $quoteCarouselBGColor;
+    padding: 15px;
+    border-radius: 5px;
+    border-width: 2px;
+  }
+  & h1 {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: $quoteCarouselColor;
+  }
+  & h2 {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: $quoteCarouselColor;
+  }
+  & h3 {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: $quoteCarouselColor;
+  }
+  & p {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 18px;
+    background-color: $quoteCarouselBGColor;
+    color: $quoteCarouselColor;
+  }
+  & span {
+    color: $quoteCarouselColor;
+  }
+}
+
+// maps to the default orbit slide
+.orbit-slide {
+  background-color: inherit;
+}
+
+li .orbit-slide .is-active {
+  background-color: $quoteCarouselBGColor;
+}
+
+// maps to the custom quote icon
+.quote-carousel-icon {
+  font-size: 24px;
+}

@@ -516,9 +516,6 @@ p {
   width: 140px;
   height: 140px; }
 
-.card .padded {
-  padding: 10px; }
-
 section {
   padding-top: 60px;
   padding-bottom: 60px; }
@@ -601,37 +598,26 @@ section {
     color: #333333; }
 
 .contact-menu {
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #333333;
   color: #999999; }
-  .contact-menu ul {
-    padding-top: 20px;
-    padding-bottom: 20px; }
   .contact-menu ul li {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-weight: normal;
-    padding-right: 15px;
     font-size: 16px; }
   .contact-menu span {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-weight: normal;
     color: #999999;
     font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 10px; }
+    text-transform: uppercase; }
 
 .top-bar {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-color: #FFFFFF !important;
   border-top: solid 1px #333333;
   border-bottom: solid 1px #333333; }
   .top-bar ul {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
     background-color: #FFFFFF !important; }
 
 .top-bar-left ul li a {
@@ -657,9 +643,7 @@ section {
 .cta-bar {
   background-color: #FFFFFF;
   border-top: none;
-  border-bottom: solid 1px #CCCCCC;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  border-bottom: solid 1px #CCCCCC; }
   .cta-bar .cta-buttons {
     margin-top: 10px; }
     .cta-bar .cta-buttons .button {
@@ -667,8 +651,6 @@ section {
       font-size: 16px; }
 
 .secondary-nav {
-  padding-top: 40px;
-  padding-bottom: 40px;
   background-color: #222222; }
 
 a.secondary-link {
@@ -710,53 +692,54 @@ a.secondary-link:hover {
     font-weight: bold;
     text-transform: none !important; }
 
-.banner-quote {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: #666666; }
-  .banner-quote .orbit-bullets {
+.quote-carousel {
+  background-color: #666666;
+  color: #999999; }
+  .quote-carousel .orbit-bullets {
     background-color: #666666; }
-  .banner-quote .orbit-bullets button {
+  .quote-carousel .orbit-bullets button {
     background-color: #CCCCCC; }
-  .banner-quote.is-active {
+  .quote-carousel .is-active {
     background-color: #333333; }
+  .quote-carousel .card {
+    background-color: #666666;
+    padding: 15px;
+    border-radius: 5px;
+    border-width: 2px; }
+  .quote-carousel h1 {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #999999; }
+  .quote-carousel h2 {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #999999; }
+  .quote-carousel h3 {
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #999999; }
+  .quote-carousel p {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 18px;
+    background-color: #666666;
+    color: #999999; }
+  .quote-carousel span {
+    color: #999999; }
 
-.banner-quote .card {
-  background-color: inherit;
-  padding: 15px;
-  border-radius: 5px;
-  border-width: 2px; }
+.orbit-slide {
+  background-color: inherit; }
 
-.banner-quote h1 {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 60px;
-  color: #FCFCFC; }
+li .orbit-slide .is-active {
+  background-color: #666666; }
 
-.banner-quote h2 {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 42px;
-  font-weight: bold;
-  color: #FCFCFC; }
-
-.banner-quote h3 {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  color: #FCFCFC; }
-
-.banner-quote p {
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 18px;
-  color: #FCFCFC; }
-
-.banner-quote span {
-  color: #FCFCFC; }
-
-.banner-quote-icon {
+.quote-carousel-icon {
   font-size: 24px; }
+
+.card .padded {
+  padding: 10px; }
 
 .client-card {
   background-color: #FFFFFF;

@@ -1,5 +1,12 @@
 // cards.scss
 
+// default client card
+.card {
+  & .padded {
+    padding: 10px;
+  }
+}
+
 // client-card variables
 $client-card-border-top: solid 5px #0066cc;
 
