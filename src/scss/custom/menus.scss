@@ -135,7 +135,7 @@ $footer-nav-border-bottom: solid 5px #333333;
 // maps to the custom secondary nav class
 .secondary-nav {
   @include margin (null, null, null, null);
-  @include padding (null, null, null, null);
+  @include padding (40px, null, 40px, null);
   background-color: $secondaryNavBgColor;
 }
 

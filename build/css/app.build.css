@@ -651,6 +651,8 @@ section {
       font-size: 16px; }
 
 .secondary-nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #222222; }
 
 a.secondary-link {
@@ -959,7 +961,7 @@ a.button {
   font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
 
 footer {
-  padding-top: 0px;
+  padding-top: 20px;
   padding-bottom: 0px;
   background-color: #222222;
   color: #999999;
@@ -998,7 +1000,7 @@ footer {
 
 .copyright {
   padding-top: 20px;
-  padding-bottom: 0px; }
+  padding-bottom: 40px; }
   .copyright p {
     font-family: "Merriweather", "Georgia", "Times New Roman", serif;
     font-size: 16px; }
