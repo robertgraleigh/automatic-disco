@@ -623,7 +623,7 @@ section {
 .contact-menu {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-image: url("/img/black_lozenge.png");
+  background-image: url("/../../img/black_lozenge.png");
   color: #999999; }
   .contact-menu ul li {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
@@ -664,7 +664,7 @@ section {
   text-decoration: none; }
 
 .cta-bar {
-  background-color: #FFFFFF;
+  background-image: url("/../../img/seigaiha.png");
   border-top: none;
   border-bottom: solid 1px #CCCCCC; }
   .cta-bar .cta-buttons {
@@ -676,8 +676,7 @@ section {
 .secondary-nav {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-image: url("/img/black_lozenge.png");
-  background-color: #222222; }
+  background-image: url("/../../img/black_lozenge.png"); }
 
 a.secondary-link {
   color: #999999; }
