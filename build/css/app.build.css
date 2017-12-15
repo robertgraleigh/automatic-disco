@@ -688,7 +688,7 @@ a.secondary-link:hover {
 
 .hero {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   background-color: #0066cc;
   color: #FFFFFF; }
   .hero h1.hero-heading {
@@ -717,6 +717,12 @@ a.secondary-link:hover {
     font-size: 18px;
     font-weight: bold;
     text-transform: none !important; }
+  .hero a {
+    color: #FFFFFF; }
+  .hero a.hover {
+    color: #FFFFFF; }
+  .hero a.active {
+    color: #FFFFFF; }
 
 .quote-carousel {
   background-color: #666666;

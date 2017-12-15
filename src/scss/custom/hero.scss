@@ -20,7 +20,7 @@ $heroDescriptionFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-seri
 
 .hero {
   @include margin (null, null, null, null);
-  @include padding (60px, null, 60px, null);
+  @include padding (60px, null, 40px, null);
   background-color: #0066cc;
   color: #FFFFFF;
   & h1.hero-heading {
@@ -52,5 +52,14 @@ $heroDescriptionFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-seri
     font-size: 18px;
     font-weight: bold;
     text-transform: none !important;
+  }
+  & a {
+    color: #FFFFFF;
+  }
+  & a.hover {
+    color: #FFFFFF;
+  }
+  & a.active {
+    color: #FFFFFF;
   }
 }
