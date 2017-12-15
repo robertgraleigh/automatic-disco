@@ -8,75 +8,121 @@
   <link href="css/app.build.css" rel="stylesheet"></head>
   <body>
 
-    <!-- contact menu -->
-    <section class="contact-menu">
+    <!-- custom contact menu class -->
+    <nav class="contact-menu">
       <a id="top"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid padding-x">
-          <div class="large-6 cell">
-            <ul class="horizontal menu align-left">
+          <div class="large-4 cell">
+            <ul class="menu align-left">
               <li class="menu-text">
-                <span class="text-left">Robert G. Raleigh | Project Manager and Frontend Developer</span>
+                <span class="text-left">RGR Digital</span>
               </li>
+            </ul>
           </div>
-          <div class="large-6 cell">
-            <ul class="horizontal menu align-right">
-              <li>
-                <a href="tel:+19717702859">
-                  <i class="fa fa-phone fa-1x"></i>&nbsp; +1 (971) 770-2859
-                </a>
+          <div class="large-8 cell">
+            <ul class="horizontal padded menu align-right">
+              <li class="menu-text">
+                <span>
+                  <i class="fa fa-phone fa-1x"></i>&nbsp; +1 833-RGR-DGTL
+                </span>
               </li>
-              <li>
-                <a href="mailto:hello@robertgraleigh.com">
-                  <i class="fa fa-envelope fa-1x"></i>&nbsp; hello@robertgraleigh.com
-                </a>
+              <li class="menu-text">
+                <span>
+                  <i class="fa fa-envelope fa-1x"></i>&nbsp; hello@rgrdigital.com
+                </span>
               </li>
-              <li>
-                <a href="https://www.slack.com"><i class="fa fa-slack fa-1x"></i>&nbsp; @RobertGRaleigh</a>
+              <li class="menu-text">
+                <span><i class="fa fa-slack fa-1x"></i>&nbsp; @RobertGRaleigh</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
+    </nav>
 
     <div data-sticky-container>
       <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
         <div class="top-bar topbar-sticky-shrink">
-          <div class="top-bar-title">
-            <a href="index.html">
-              <img src="https://placehold.it/60x60" alt="RGR Enterprises logo" />
-            </a>
-          </div>
           <div class="top-bar-left">
-            <ul class="horizontal menu">
+            <ul class="dropdown menu" data-dropdown-menu>
               <li>
-                <a href="#about" data-smooth-scroll>About</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="#products" data-smooth-scroll>Products</a>
+                <a href="about.html">About</a>
+                <ul class="menu">
+                  <li><a href="about.html/#meet-robert">Meet Robert</a></li>
+                  <li>
+                    <a href="about.html#values">Values</a>
+                    <ul class="menu">
+                      <li><a href="about.html/#empathy">Empathy</a></li>
+                      <li><a href="about.html/#creativity">Creativity</a></li>
+                      <li><a href="about.html/#another-item">Learning</a></li>
+                      <li><a href="about.html/#community">Community</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="about.html#skillset">Skillset</a>
+                    <ul class="menu">
+                      <li><a href="about.html#project-management">Project Management</a></li>
+                      <li><a href="about.html#frontend-development">Frontend Development</a></li>
+                      <li><a href="about.html#soft-skills">Soft Skills</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="about.html#experience">Experience</a>
+                    <ul class="menu">
+                      <li><a href="about.html/#work-experience">Employment</a></li>
+                      <li><a href="about.html/#volunteer">Volunteer</a></li>
+                      <li><a href="about.html/#education">Education</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="about.html#contact-info">Contact Info</a></li>
+                </ul>
               </li>
               <li>
-                <a href="#services" data-smooth-scroll>Services</a>
+                <a href="products.html">Products</a>
+                <ul class="menu">
+                  <li>
+                    <a href="#Item-2A">Websites</a>
+                    <ul class="menu">
+                      <li><a href="products.html#static-websites">Static Website</a></li>
+                      <li><a href="products.html#cms-websites">CMS Websites</a></li>
+                      <li><a href="products.html#custom-websites">Custom Websites</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#Item-2B">E-Commerce</a>
+                    <ul class="menu">
+                      <li><a href="products.html">Stripe</a></li>
+                      <li><a href="products.html">Shopify</a></li>
+                      <li><a href="products.html">Custom</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li>
-                <a href="#clients" data-smooth-scroll>
-                  Clients
-                </a>
+                <a href="services.html">Services</a>
+                <ul class="menu">
+                  <li><a href="#Item-2A">Frontend Development</a></li>
+                  <li><a href="#Item-2B">Project Management</a></li>
+                  <li>
+                    <a href="">Technology Consulting</a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="#projects" data-smooth-scroll>
-                  Projects
-                </a>
-              </li>
+              <li><a href="clients.html">Clients</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="top-bar-right">
             <ul class="horizontal menu">
-              <li><a href="#contact" class="secondary button">Contact</a></li>
+              <li><a href="#contact" class="dark-gray button">Contact</a></li>
               <li><a href="#get-started" class="primary button">Get Started</a></li>
               <li>
-                <a href="#cart" class=""><i class="fa fa-1x fa-shopping-cart"></i></a>
+                <a href="cart.html" class=""><i class="fa fa-1x fa-shopping-cart"></i></a>
               </li>
             </ul>
           </div>
@@ -218,63 +264,115 @@
       </div>
     </section>
 
-    <!-- footer -->
-    <footer class="footer">
+    <!-- maps to custom secondary nav class -->
+    <nav class="secondary-nav">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
+          <div class="small-offset-4 small-4 medium-offset-4 medium-4 large-offset-5 large-2 cell">
+            <p class='text-center'>
+              <a href="index.html">
+                <img src="img/rgr-digital-attache-logo-transparent-bg.png" alt="RGR Digital Services Attache Logo"  />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
+          <div class="small-12 medium-12 large-12 cell">
+            <ul class="horizonal menu align-center">
+              <li>
+                <a href="index.html" class="secondary-link">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="secondary-link">About</a>
+              </li>
+              <li>
+                <a href="products.html" class="secondary-link">Products</a>
+              </li>
+              <li>
+                <a href="services.html" class="secondary-link">Services</a>
+              </li>
+              <li>
+                <a href="clients.html" class="secondary-link">Clients</a>
+              </li>
+              <li>
+                <a href="projects.html" class="secondary-link">Projects</a>
+              </li>
+              <li>
+                <a href="blog.html" class="secondary-link">Blog</a>
+              </li>
+              <li>
+                <a href="contact-us.html" class="secondary-link">Contact Us</a>
+              </li>
+              <li>
+                <a href="get-started.html" class="secondary-link">Get started</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- maps to default footer class -->
+    <footer>
       <a id="contact"></a>
       <div class="grid-container">
         <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-2 cell">
-            <img src="http://placehold.it/140x140" class="thumbnail float-left" alt="Robert G. Raleigh"  />
-          </div>
-          <div class="large-4 cell">
-            <h3 class="footer-heading text-left">About Robert G. Raleigh</h3>
-            <p class="footer-paragraph text-left">
-              Robert G. Raleigh is a project manager and frontend developer with 10+ years of project leaership and managemnt
-              experience working in the technology, nonprofit, and education industries.
+          <div class="large-6 cell">
+            <h2 class="text-left">About RGR Digital Services</h2>
+            <p class="text-left">
+              At RGR Digital Services, we provide contract agile project management, development, and technology consulting services for
+              digital agencies, startups, small businesses nonprofits, and creatives.
             </p>
-            <p class="footer-paragraph text-left">
-              <i class="fa fa-map-marker"></i>&nbsp; Robert is based in Portland, OR.
+            <p class="text-left">
+              Robert G. Raleigh is a project manager and frontend developer with 10+ years of project leadership and management
+              experience working in the technology, nonprofit, education, and creative sectors.
+            </p>
+            <p class="text-left">
+              <i class="fa fa-map-marker"></i>&nbsp; RGR Digital is located in Portland, OR.
             </p>
           </div>
           <div class="large-3 cell">
-            <h3 class="footer-heading text-left">
-              Location
+            <h3 class="text-left">
+              Office
             </h3>
             <p class="text-left">
-              <address class="footer-address text-left">
-                NXT Industries <br  />
-                1302 SE Martin Luther King Jr Blvd <br />
+              <address class="text-left">
+                NXT Industries:Lab <br  />
+                1302 SE MLK Jr Blvd <br />
                 Portland, OR 97214 <br />
               </address>
             </p>
-            <a href="">
+            <a href="https://www.google.com/maps/dir//NXT+Industries:+Lab,+1302+SE+Martin+Luther+King+Jr+Blvd,+Portland,+OR+97214/@45.5135071,-122.6638418,17z/data=!4m16!1m6!3m5!1s0x54950a0b1de504cd:0x279f349fd03e625b!2sNXT+Industries:+Lab!8m2!3d45.5135034!4d-122.6616531!4m8!1m0!1m5!1m1!1s0x54950a0b1de504cd:0x279f349fd03e625b!2m2!1d-122.6616531!2d45.5135034!3e0">
               <i class="fa fa-map"></i> Get Directions
             </a>
           </div>
           <div class="large-3 cell">
-            <h3 class="footer-heading text-left">
+            <h3 class="text-left">
               Contact Info
             </h3>
             <ul class="vertical menu">
-              <a href="">
-                <i class="fa fa-envelope"></i> Email
+              <a href="tel:18337473485">
+                <i class="fa fa-phone"></i> +1 (833) RGR-DGTL
               </a>
               <a href="">
-                <i class="fa fa-phone"></i> Phone
+                <i class="fa fa-envelope"></i> robert@rgrdigital.com
               </a>
               <a href="">
-                <i class="fa fa-envelope"></i> Slack
+                <i class="fa fa-slack"></i> @RobertGRaleigh
               </a>
             </ul>
           </div>
         </div>
       </div>
+      <!-- maps to custom copyright class -->
       <div class="copyright">
         <div class="grid-container">
           <div class="grid-x grid-margin-x grid-padding-x">
             <div class="large-6 cell">
-              <p class="footer-paragraph text-left">
-                &copy; Copyright 2007 - 2018. Robert G. Raleigh. All rights reserved.
+              <p class="text-left">
+                &copy; Copyright 2007 - <script type="text/javascript">document.write(new Date().getFullYear());</script>. RGR Digital Services, LLC. All rights reserved.
               </p>
             </div>
             <div class="large-6 cell">

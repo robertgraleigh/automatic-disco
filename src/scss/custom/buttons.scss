@@ -1,13 +1,29 @@
 // buttons.scss
+
+// custom button variables
+$buttonFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+$buttonFontSize: 21px;
+$buttonFontWeight: bold;
+
+button {
+  font-family: $buttonFontFamily;
+  font-size: $buttonFontSize;
+  font-weight: $buttonFontWeight;
+  text-transform: capitalize;
+}
 .button {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif ;
+  font-family: $buttonFontFamily;
+  font-size: $buttonFontSize;
+  font-weight: $buttonFontWeight;
+  text-transform: capitalize;  
 }
 a.button {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif ;
+  font-family: $buttonFontFamily;
+  font-size: $buttonFontSize;
 }
 .button.primary {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif !important;
+  font-family: $buttonFontFamily;
 }
 .button.secondary {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-family: $buttonFontFamily;
 }

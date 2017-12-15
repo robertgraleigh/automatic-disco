@@ -81,6 +81,16 @@
         template: 'src/about.html'
       }),
       new HtmlWebpackPlugin({
+        title: 'Products',
+        filename: 'products.html',
+        template: 'src/products.html'
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Services',
+        filename: 'services.html',
+        template: 'src/services.html'
+      }),
+      new HtmlWebpackPlugin({
         title: 'Clients',
         filename: 'clients.html',
         template: 'src/clients.html'
@@ -90,6 +100,11 @@
         filename: 'projects.html',
         template: 'src/projects.html'
       }),
+      new HtmlWebpackPlugin({
+        title: 'Blog',
+        filename: 'blog.html',
+        template: 'src/blog.html'
+      }),      
       new HtmlWebpackPlugin({
         title: 'Cart',
         filename: 'cart.html',

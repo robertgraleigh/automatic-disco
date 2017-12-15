@@ -792,14 +792,24 @@ li .orbit-slide .is-active {
   .card .card-industry {
     padding-bottom: 10px; }
 
+button {
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: capitalize; }
+
 .button {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: capitalize; }
 
 a.button {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 21px; }
 
 .button.primary {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
 
 .button.secondary {
   font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
