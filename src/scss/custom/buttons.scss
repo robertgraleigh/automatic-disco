@@ -2,7 +2,7 @@
 
 // custom button variables
 $buttonFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-$buttonFontSize: 21px;
+$buttonFontSize: 16px;
 $buttonFontWeight: bold;
 
 button {
@@ -15,7 +15,7 @@ button {
   font-family: $buttonFontFamily;
   font-size: $buttonFontSize;
   font-weight: $buttonFontWeight;
-  text-transform: capitalize;  
+  text-transform: capitalize;
 }
 a.button {
   font-family: $buttonFontFamily;
@@ -23,7 +23,9 @@ a.button {
 }
 .button.primary {
   font-family: $buttonFontFamily;
+  font-size: $buttonFontSize;
 }
 .button.secondary {
   font-family: $buttonFontFamily;
+  font-size: $buttonFontSize;  
 }

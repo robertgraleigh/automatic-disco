@@ -26,6 +26,9 @@ $orbitsBulletsBgColorActive: #333333;
   @include padding (null, null, null, null);
   background-color: $quoteCarouselBGColor;
   color: $quoteCarouselColor;
+  & .orbit-slide {
+    background-color: $quoteCarouselBGColor;
+  }
   & .orbit-bullets {
     background-color: $quoteCarouselBGColor;
   }
@@ -33,13 +36,13 @@ $orbitsBulletsBgColorActive: #333333;
     background-color: $orbitsBulletsBgColor;
   }
   & .is-active {
-    background-color: $orbitsBulletsBgColorActive;
+    background-color: $quoteCarouselBGColor;
   }
   & .card {
     background-color: $quoteCarouselBGColor;
     padding: 15px;
     border-radius: 5px;
-    border-width: 2px;
+    border: solid 2px #CCCCCC;
   }
   & h1 {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
@@ -70,9 +73,15 @@ $orbitsBulletsBgColorActive: #333333;
   }
 }
 
-// maps to the default orbit slide
-.orbit-slide {
-  background-color: inherit;
+.blog-carousel {
+  background-color: #FFFFFF !important;
+  & .orbit {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  & .orbit-slide {
+    background-color: #FFFFFF;
+  }
 }
 
 li .orbit-slide .is-active {

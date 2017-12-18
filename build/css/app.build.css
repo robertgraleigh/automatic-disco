@@ -726,17 +726,19 @@ a.secondary-link:hover {
 .quote-carousel {
   background-color: #666666;
   color: #999999; }
+  .quote-carousel .orbit-slide {
+    background-color: #666666; }
   .quote-carousel .orbit-bullets {
     background-color: #666666; }
   .quote-carousel .orbit-bullets button {
     background-color: #CCCCCC; }
   .quote-carousel .is-active {
-    background-color: #333333; }
+    background-color: #666666; }
   .quote-carousel .card {
     background-color: #666666;
     padding: 15px;
     border-radius: 5px;
-    border-width: 2px; }
+    border: solid 2px #CCCCCC; }
   .quote-carousel h1 {
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-weight: bold;
@@ -760,8 +762,13 @@ a.secondary-link:hover {
   .quote-carousel span {
     color: #999999; }
 
-.orbit-slide {
-  background-color: inherit; }
+.blog-carousel {
+  background-color: #FFFFFF !important; }
+  .blog-carousel .orbit {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  .blog-carousel .orbit-slide {
+    background-color: #FFFFFF; }
 
 li .orbit-slide .is-active {
   background-color: #666666; }
@@ -796,28 +803,32 @@ li .orbit-slide .is-active {
     font-size: 14px; }
   .card .card-industry {
     padding-bottom: 10px; }
+  .card .card-category {
+    padding-bottom: 10px; }
 
 button {
   font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: capitalize; }
 
 .button {
   font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: capitalize; }
 
 a.button {
   font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 21px; }
+  font-size: 16px; }
 
 .button.primary {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 16px; }
 
 .button.secondary {
-  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif; }
+  font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 16px; }
 
 footer {
   padding-top: 20px;

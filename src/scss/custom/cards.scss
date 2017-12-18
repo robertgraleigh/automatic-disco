@@ -35,6 +35,10 @@ $cardDescription: "Merriweather", "Georgia", "Arial", serif;
     @include margin (null, null, null, null);
     @include padding (null, null, 10px, null);
   }
+  & .card-category {
+    @include margin (null, null, null, null);
+    @include padding (null, null, 10px, null);
+  }
   & .card-button {
     @include margin (null, null, null, null);
     @include padding (null, null, null, null);
