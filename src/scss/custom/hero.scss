@@ -18,14 +18,33 @@ $heroDescriptionFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-seri
   padding-left: $left;
 }
 
-.hero {
+.three-column-hero {
+  @include margin (null, null, null, null);
+  @include padding (0px, null, 0px, null);
+  & .dark-gray-bg {
+    background-color: darken(#CCCCCC, 20%);
+  }
+  & .blue-bg {
+    background-color: darken(#0066cc, 20%);
+  }
+  & .light-gray-bg {
+    background-color: darken(#999999, 20%);
+  }
+}
+
+.two-column-hero {
   @include margin (null, null, null, null);
   @include padding (60px, null, 40px, null);
-  background-color: #0066cc;
+}
+
+.hero {
+  @include margin (null, null, null, null);
+  @include padding (0px, null, 0px, null);
+  background-color: none;
   color: #FFFFFF;
   & h1.hero-heading {
     @include margin (null, null, null, null);
-    @include padding (0px, null, 0px, null);
+    @include padding (20px, null, 0px, null);
     font-family: $heroHeadingFontFamily;
     font-size: 54px;
     font-weight: bold;
@@ -64,6 +83,23 @@ $heroDescriptionFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-seri
   }
 }
 
-.home-hero-image {
-  background-image: url("/../../img/portland-oregon-sign-bw.png");
+#left-hero-column {
+  @include margin (null, null, null, null);
+  @include padding (0px, null, 60px, null);
+  background: url("/../../img/portland-oregon-sign-bw.png") no-repeat center;
+  background-position: top;
+}
+
+#right-hero-column {
+  @include margin (null, null, null, null);
+  @include padding (0px, null, 120px, null);
+  background-color: #0066cc;
+  & h1.hero-heading {
+    @include margin (null, null, null, null);
+    @include padding (120px, null, 0px, null);
+  }
+  & .hero-icon {
+    @include margin (null, null, null, null);
+    @include padding (120px, null, 0px, null);
+  }
 }

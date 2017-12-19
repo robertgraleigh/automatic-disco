@@ -689,13 +689,27 @@ a.secondary-link:hover {
   color: #666666 !important;
   text-decoration: underline; }
 
-.hero {
+.three-column-hero {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+  .three-column-hero .dark-gray-bg {
+    background-color: #999999; }
+  .three-column-hero .blue-bg {
+    background-color: #003366; }
+  .three-column-hero .light-gray-bg {
+    background-color: #666666; }
+
+.two-column-hero {
   padding-top: 60px;
-  padding-bottom: 40px;
-  background-color: #0066cc;
+  padding-bottom: 40px; }
+
+.hero {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: none;
   color: #FFFFFF; }
   .hero h1.hero-heading {
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 0px;
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 54px;
@@ -727,8 +741,22 @@ a.secondary-link:hover {
   .hero a.active {
     color: #FFFFFF; }
 
-.home-hero-image {
-  background-image: url("/../../img/portland-oregon-sign-bw.png"); }
+#left-hero-column {
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background: url("/../../img/portland-oregon-sign-bw.png") no-repeat center;
+  background-position: top; }
+
+#right-hero-column {
+  padding-top: 0px;
+  padding-bottom: 120px;
+  background-color: #0066cc; }
+  #right-hero-column h1.hero-heading {
+    padding-top: 120px;
+    padding-bottom: 0px; }
+  #right-hero-column .hero-icon {
+    padding-top: 120px;
+    padding-bottom: 0px; }
 
 .quote-carousel {
   background-color: #666666;
