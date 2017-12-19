@@ -491,6 +491,10 @@ p {
   font-size: 54px;
   color: #0057BD; }
 
+.font-awesome-icon {
+  font-size: 54px;
+  color: #0057BD; }
+
 .reveal {
   border-top: solid 5px #005ACF !important; }
 
@@ -722,6 +726,9 @@ a.secondary-link:hover {
     color: #FFFFFF; }
   .hero a.active {
     color: #FFFFFF; }
+
+.home-hero-image {
+  background-image: url("/../../img/portland-oregon-sign-bw.png"); }
 
 .quote-carousel {
   background-color: #666666;
