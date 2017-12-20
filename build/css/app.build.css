@@ -703,42 +703,42 @@ a.secondary-link:hover {
   padding-top: 60px;
   padding-bottom: 40px; }
 
-.hero {
+.home-hero {
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: none;
   color: #FFFFFF; }
-  .hero h1.hero-heading {
+  .home-hero h1.hero-heading {
     padding-top: 20px;
     padding-bottom: 0px;
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 54px;
     font-weight: bold; }
-  .hero h2.hero-heading {
+  .home-hero h2.hero-heading {
     padding-top: 0px;
     padding-bottom: 0px;
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 54px;
     font-weight: bold; }
-  .hero p.hero-description {
+  .home-hero p.hero-description {
     padding-top: 0px;
     padding-bottom: 0px;
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-transform: none !important; }
-  .hero span.hero-description {
+  .home-hero span.hero-description {
     padding-top: 0px;
     padding-bottom: 0px;
     font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-transform: none !important; }
-  .hero a {
+  .home-hero a {
     color: #FFFFFF; }
-  .hero a.hover {
+  .home-hero a.hover {
     color: #FFFFFF; }
-  .hero a.active {
+  .home-hero a.active {
     color: #FFFFFF; }
 
 #left-hero-column {
@@ -757,6 +757,56 @@ a.secondary-link:hover {
   #right-hero-column .hero-icon {
     padding-top: 120px;
     padding-bottom: 0px; }
+
+.single-page-hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #0066CC;
+  color: #FFFFFF; }
+  .single-page-hero h1.hero-heading {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-size: 54px;
+    font-weight: bold; }
+  .single-page-hero h2.hero-heading {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
+    font-size: 54px;
+    font-weight: bold; }
+  .single-page-hero p.hero-description {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none !important; }
+
+.single-page-header {
+  background-color: #0066cc; }
+  .single-page-header .page-heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white; }
+  .single-page-header .branding {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background-image: url("/../../img/black_lozenge.png"); }
+  .single-page-header .page-title {
+    padding-top: 40px;
+    padding-bottom: 25px; }
+
+nav.single-page-navigation {
+  border-bottom: solid 2px #333333;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  nav.single-page-navigation a {
+    color: #333333; }
+  nav.single-page-navigation a:hover {
+    color: #333333;
+    text-decoration: underline; }
 
 .quote-carousel {
   background-color: #666666;
