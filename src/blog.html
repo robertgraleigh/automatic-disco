@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <!-- custom contact menu class -->
+    <!-- nav with contact info  -->
     <nav class="contact-menu">
       <a id="top"></a>
       <div class="grid-container">
@@ -16,7 +16,7 @@
           <div class="large-4 cell">
             <ul class="menu align-left">
               <li class="menu-text">
-                <span class="text-left">RGR Digital</span>
+                <span class="text-left">Get in touch with RGR Digital</span>
               </li>
             </ul>
           </div>
@@ -51,78 +51,36 @@
               </li>
               <li>
                 <a href="about.html">About</a>
-                <ul class="menu">
-                  <li><a href="about.html/#meet-robert">Meet Robert</a></li>
-                  <li>
-                    <a href="about.html#values">Values</a>
-                    <ul class="menu">
-                      <li><a href="about.html/#empathy">Empathy</a></li>
-                      <li><a href="about.html/#creativity">Creativity</a></li>
-                      <li><a href="about.html/#another-item">Learning</a></li>
-                      <li><a href="about.html/#community">Community</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="about.html#skillset">Skillset</a>
-                    <ul class="menu">
-                      <li><a href="about.html#project-management">Project Management</a></li>
-                      <li><a href="about.html#frontend-development">Frontend Development</a></li>
-                      <li><a href="about.html#soft-skills">Soft Skills</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="about.html#experience">Experience</a>
-                    <ul class="menu">
-                      <li><a href="about.html/#work-experience">Employment</a></li>
-                      <li><a href="about.html/#volunteer">Volunteer</a></li>
-                      <li><a href="about.html/#education">Education</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html#contact-info">Contact Info</a></li>
-                </ul>
               </li>
               <li>
                 <a href="products.html">Products</a>
-                <ul class="menu">
-                  <li>
-                    <a href="#Item-2A">Websites</a>
-                    <ul class="menu">
-                      <li><a href="products.html#static-websites">Static Website</a></li>
-                      <li><a href="products.html#cms-websites">CMS Websites</a></li>
-                      <li><a href="products.html#custom-websites">Custom Websites</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#Item-2B">E-Commerce</a>
-                    <ul class="menu">
-                      <li><a href="products.html">Stripe</a></li>
-                      <li><a href="products.html">Shopify</a></li>
-                      <li><a href="products.html">Custom</a></li>
-                    </ul>
-                  </li>
-                </ul>
               </li>
               <li>
                 <a href="services.html">Services</a>
-                <ul class="menu">
-                  <li><a href="#Item-2A">Frontend Development</a></li>
-                  <li><a href="#Item-2B">Project Management</a></li>
-                  <li>
-                    <a href="">Technology Consulting</a>
-                  </li>
-                </ul>
               </li>
-              <li><a href="clients.html">Clients</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <li>
+                <a href="clients.html">Clients</a>
+              </li>
+              <li>
+                <a href="projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="blog.html">Blog</a>
+              </li>
             </ul>
           </div>
           <div class="top-bar-right">
             <ul class="horizontal menu">
-              <li><a href="#contact" class="dark-gray button">Contact</a></li>
-              <li><a href="#get-started" class="primary button">Get Started</a></li>
               <li>
-                <a href="cart.html" class=""><i class="fa fa-1x fa-shopping-cart"></i></a>
+                <a href="#contact" class="dark-gray button">Contact</a>
+              </li>
+              <li>
+                <a href="#get-started" class="primary button">Get Started</a>
+              </li>
+              <li>
+                <a href="cart.html" class="">
+                  <i class="fa fa-1x fa-shopping-cart"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -130,26 +88,42 @@
       </div>
     </div>
 
-    <!-- primary website hero -->
-    <header class="hero">
-      <div class="grid-container align-middle">
+    <!-- custom single page hero section -->
+    <header class="single-page-header">
+      <div class="grid-container full">
         <div class="grid-x grid-margin-x grid-padding-x">
-          <div class="large-5 cell">
-            <h1 class="hero-heading text-center">
-              Inside the Attache blog
-            </h1>
+          <div class="large-7 page-title cell align-left">
+            <h1 class="page-heading text-left">RGR Digital: Inside The Attache Blog</h1>
           </div>
-          <div class="large-7 cell">
-            <p class="hero-description text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              In nulla posuere sollicitudin aliquam.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              In nulla posuere sollicitudin aliquam.
-            </p>
+          <div class="large-5 branding cell">
+            <ul class="horizontal padded menu align-right">
+              <li class="menu-text">
+                <span>
+                  <i class="fa fa-phone fa-1x"></i>&nbsp; +1 833-RGR-DGTL
+                </span>
+              </li>
+              <li class="menu-text">
+                <span>
+                  <i class="fa fa-envelope fa-1x"></i>&nbsp; hello@rgrdigital.com
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- projects blog page sub-navigation -->
+    <nav class="single-page-navigation">
+      <ul class="horizontal menu align-left">
+        <li>
+          <a href="#what-we-build" class="">What We Build</a>
+        </li>
+        <li>
+          <a href="#past-projects" class="white">Past Projects</a>
+        </li>
+      </ul>
+    </nav>
 
     <section class="">
       <div class="grid-container">
