@@ -793,6 +793,7 @@ a.secondary-link:hover {
   .single-page-header .branding {
     padding-top: 40px;
     padding-bottom: 25px;
+    padding-left: 10px;
     background-image: url("/../../img/black_lozenge.png"); }
   .single-page-header .page-title {
     padding-top: 40px;

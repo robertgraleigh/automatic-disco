@@ -143,7 +143,7 @@ $heroDescriptionFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-seri
   }
   & .branding {
     @include margin (null, null, null, null);
-    @include padding (40px, null, 25px, null);
+    @include padding (40px, null, 25px, 10px);
     background-image: url("/../../img/black_lozenge.png");
   }
   & .page-title {
@@ -155,7 +155,7 @@ $heroDescriptionFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-seri
 nav.single-page-navigation {
   border-bottom: solid 2px #333333;
   @include margin (null, null, null, null);
-  @include padding (20px, null, 20px, null);  
+  @include padding (20px, null, 20px, null);
   & a {
     color: #333333;
   }
