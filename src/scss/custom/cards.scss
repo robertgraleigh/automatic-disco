@@ -44,3 +44,41 @@ $cardDescription: "Merriweather", "Georgia", "Arial", serif;
     @include padding (null, null, null, null);
   }
 }
+
+.product-card {
+  @include margin (null, null, null, null);
+  @include padding (10px, 10px, 0px, 10px);
+  border: solid 2px #CCCCCC;
+  border-radius: 5px;
+  & h3.card-heading {
+    font-size: 16px;
+  }
+  & h4.card-heading {
+    font-size: 14px;
+  }
+  & p.card-description {
+    font-size: 14px;
+  }
+  & span.card-description {
+    font-size: 14px;
+  }
+  & .card-thumbnail {
+    @include margin (null, null, null, null);
+    @include padding (10px, 0px, 0px, 0px);
+  }
+  & .buttton-group {
+    @include padding (0px, 0px, 0px, 0px);
+  }
+}
+
+#diy-website-image {
+  background-image: url("https://placehold.it/360x100");
+}
+
+#static-website-image {
+  background-image: url("https://placehold.it/360x100");
+}
+
+#cms-website-image {
+  background-image: url("https://placehold.it/360x100");
+}

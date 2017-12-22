@@ -892,6 +892,41 @@ li .orbit-slide .is-active {
   .card .card-category {
     padding-bottom: 10px; }
 
+.product-card {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  border: solid 2px #CCCCCC;
+  border-radius: 5px; }
+  .product-card h3.card-heading {
+    font-size: 16px; }
+  .product-card h4.card-heading {
+    font-size: 14px; }
+  .product-card p.card-description {
+    font-size: 14px; }
+  .product-card span.card-description {
+    font-size: 14px; }
+  .product-card .card-thumbnail {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px; }
+  .product-card .buttton-group {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px; }
+
+#diy-website-image {
+  background-image: url("https://placehold.it/360x100"); }
+
+#static-website-image {
+  background-image: url("https://placehold.it/360x100"); }
+
+#cms-website-image {
+  background-image: url("https://placehold.it/360x100"); }
+
 button {
   font-family: "Merriweather Sans", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
