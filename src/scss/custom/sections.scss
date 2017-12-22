@@ -45,13 +45,13 @@ section {
     @include margin (null, null, null, null);
     @include padding (0px, null, 60px, null);
     font-family: $headingFontFamily;
-    font-size: 54px;
+    font-size: 60px;
   }
   & h2.section-heading {
     @include margin (null, null, null, null);
     @include padding (0px, null, 60px, null);
     font-family: $headingFontFamily;
-    font-size: 42px;
+    font-size: 54px;
   }
   & h3.section-heading {
     font-family: $headingFontFamily;
