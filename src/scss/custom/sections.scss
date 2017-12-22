@@ -166,3 +166,22 @@ section {
     background-image:url("/img/interchange/nxt-industries-conference-room-bw-1440px.png");
   }
 }
+
+section .two-column-section {
+  & h1.section-heading {
+    @include margin (null, null, null, null);
+    @include padding (null, null, null, null);
+  }
+  & h2.section-heading {
+    @include margin (null, null, null, null);
+    @include padding (null, null, null, null);
+  }
+  & p.section-description {
+    @include margin (null, null, null, null);
+    @include padding (null, null, null, null);
+  }
+  & img {
+    @include margin (null, null, null, null);
+    @include padding (null, null, null, null);
+  }
+}
