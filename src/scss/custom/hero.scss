@@ -46,7 +46,7 @@ $heroDescriptionFontFamily: "Merriweather Sans", "Helvetica", "Arial", sans-seri
     @include margin (null, null, null, null);
     @include padding (20px, null, 0px, null);
     font-family: $heroHeadingFontFamily;
-    font-size: 54px;
+    font-size: 60px;
     font-weight: bold;
   }
   & h2.hero-heading {

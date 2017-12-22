@@ -535,16 +535,16 @@ section {
     font-size: 54px; }
   section h3.section-heading {
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
-    font-size: 18px; }
+    font-size: 24px; }
   section h4.section-heading {
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
     font-size: 21px; }
   section h5.section-heading {
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
-    font-size: 21px; }
+    font-size: 18px; }
   section h6.section-heading {
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
-    font-size: 21px; }
+    font-size: 16px; }
   section p.section-description {
     font-family: "Merriweather", "Helvetica", "Arial", sans-serif;
     font-size: 16px; }
@@ -712,7 +712,7 @@ a.secondary-link:hover {
     padding-top: 20px;
     padding-bottom: 0px;
     font-family: "Bebas Neue", "OSP-DIN", "Arial", sans-serif;
-    font-size: 54px;
+    font-size: 60px;
     font-weight: bold; }
   .home-hero h2.hero-heading {
     padding-top: 0px;
